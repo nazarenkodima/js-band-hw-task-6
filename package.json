@@ -19,8 +19,8 @@
     "test:watch": "npm test -- --watch",
     "commit": "git-cz && jest --config=\"./jest/jest.test.config.json\" && npm run code:lint",
     "code:clean": "yarn code:lint && yarn code:format",
-    "code:lint": "eslint --ext .js,.jsx,.ts,.tsx \"src/\" --fix",
-    "code:format": "prettier './src/**/**.{js,jsx,ts,tsx}' --write",
+    "code:lint": "eslint --ext .js,.jsx,.ts,.tsx \"source/\" --fix",
+    "code:format": "prettier './source/**/**.{js,jsx,ts,tsx}' --write",
     "code:check:rules": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
   },
   "dependencies": {
