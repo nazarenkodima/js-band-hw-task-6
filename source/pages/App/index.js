@@ -7,14 +7,13 @@ import Scheduler from '../../components/Scheduler';
 
 @hot(module)
 export default class App extends Component {
-
-    render () {
-        return (
-            <Switch>
-                <Redirect exact from='/' to='/todos'/>
-                <Route component = { Scheduler } path = '/todos' />
-                <Route path="*">Oops..not found</Route>
-            </Switch>
-        );
-    }
+  render() {
+    return (
+      <Switch>
+        <Redirect exact from="/" to="/todos" />
+        <Route component={Scheduler} path="/todos" />
+        <Route path="*">Oops..not found</Route>
+      </Switch>
+    );
+  }
 }

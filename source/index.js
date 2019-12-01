@@ -10,7 +10,8 @@ import './theme/init.css';
 import App from './pages/App';
 
 render(
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>,
-    document.getElementById('app'));
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById('app'),
+);
