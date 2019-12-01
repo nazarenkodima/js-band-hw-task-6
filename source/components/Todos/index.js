@@ -14,13 +14,11 @@ export default class Todos extends Component {
   render() {
     return (
         <>
-          <main>
             <div className="container">
               <section className={Styles.todos}>
                 <h1>todos</h1>
               </section>
             </div>
-          </main>
         </>
     );
   }
