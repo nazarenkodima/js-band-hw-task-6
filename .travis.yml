@@ -8,7 +8,6 @@ branches:
   only:
     - master
 script:
-  - npm test -- --coverage
   - npm run code:clean
   - npm run build:prod
 deploy:
