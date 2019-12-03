@@ -53,7 +53,7 @@ export const generateCommonConfiguration = () => {
             },
             output: {
                 path:       build,
-                publicPath: IS_DEPLOYING_TO_GITHUB_PAGES ? `/${REPOSITORY_NAME}/` : '/',
+                publicPath: BUILD_ENV === 'development' ? '/' : './',
             },
             resolve: {
                 extensions: ['.mjs', '.js', '.json', '.css', '.m.css', '.png', '.jpg'],
