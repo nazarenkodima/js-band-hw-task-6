@@ -3,5 +3,6 @@ module.exports = {
   // Add custom rules here
   rules: {
     "react/prop-types": 0,
+    "consistent-return": "off"
   }
 };
