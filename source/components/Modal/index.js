@@ -51,8 +51,6 @@ export default class Modal extends Component {
     });
 
     toggleModal();
-
-    return createTodo
   }
 
   // updateTodo() {
