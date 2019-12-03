@@ -6,21 +6,51 @@ import TodoContext from '../ThemeContext/ThemeContext';
 import Styles from './styles.m.css';
 
 export default class Modal extends Component {
-  constructor() {
-    super();
+  // eslint-disable-next-line react/sort-comp,react/static-property-placement
+  static contextType = TodoContext;
+
+  constructor(props) {
+    super(props);
 
     this.state = {
+      id: undefined,
       title: '',
       description: '',
       priority: 'normal',
+      done: false
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
     this.createTodo = this.createTodo.bind(this);
     this.cancelTodo = this.cancelTodo.bind(this);
-    // this.updateTodo = this.updateTodo.bind(this);
+    this.updateTodo = this.updateTodo.bind(this);
+    this.fillTodo = this.fillTodo.bind(this);
   }
 
+  componentDidMount() {
+  this.fillTodo()
+
+  }
+
+  fillTodo() {
+    const {todos} = this.context;
+    const {currentTodoId} = this.props;
+
+    todos.map(todo => {
+      const t = todo;
+      if (t.id === currentTodoId) {
+
+        this.setState({
+          id: t.id,
+          title: t.title,
+          description: t.description,
+          priority: t.priority,
+          done: t.done
+        })
+      }
+      return todo;
+    });
+  }
 
 
   handleInputChange(event) {
@@ -35,7 +65,7 @@ export default class Modal extends Component {
 
   createTodo() {
     const { createTodo, toggleModal } = this.props;
-    const { title, description, priority } = this.state;
+    const { title, description, priority, done } = this.state;
 
 
     if (!title.trim()) {
@@ -46,20 +76,36 @@ export default class Modal extends Component {
       id: Date.now().toString(),
       title,
       description,
-      done: false,
+      done,
       priority,
     });
 
     toggleModal();
+
   }
 
-  // updateTodo() {
-    // const { updateTodo, toggleModal } = this.props;
+  updateTodo() {
+    const {updateTodo, currentTodoId, toggleModal} = this.props;
+    const {title, description, priority } = this.state;
+    const {todos} = this.context;
 
-    // console.log(this.context);
+
+    todos.map((todo) => {
+      const t = todo;
+      if (todo.id === currentTodoId) {
+        t.title = title;
+        t.description = description;
+        t.priority = priority
+      }
+
+      return t;
+    });
+
+    updateTodo(todos);
 
 
-  // }
+    toggleModal()
+  }
 
   cancelTodo() {
     const { toggleModal } = this.props;
@@ -68,11 +114,8 @@ export default class Modal extends Component {
 
   render() {
     const { title, description, priority } = this.state;
+    const { showSaveButton } = this.props;
 
-    const { saveButton } = this.props;
-
-    console.log('savebutton',saveButton)
-    // const { save } = this.context;
 
     return (
       <>
@@ -119,7 +162,7 @@ export default class Modal extends Component {
               </button>
             </div>
             <div>
-              {saveButton ? (
+              {showSaveButton ? (
                 <button
                   className="button btn btn-dark save-todo"
                   type="button"
@@ -142,5 +185,3 @@ export default class Modal extends Component {
     );
   }
 }
-
-Modal.contextType = TodoContext;
