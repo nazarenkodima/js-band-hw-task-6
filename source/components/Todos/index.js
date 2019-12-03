@@ -1,6 +1,6 @@
 // Core
 import React, { Component } from 'react';
-import {TodoProvider} from "../ThemeContext/ThemeContext";
+import { TodoProvider } from '../ThemeContext/ThemeContext';
 
 // Components
 import Todo from '../Todo';
@@ -64,30 +64,27 @@ export default class Todos extends Component {
   }
 
   filterTasks = todo => {
-
     const { tasksFilter, done, priority } = this.state;
 
     if (done) {
-    return todo.done === true;
+      return todo.done === true;
     }
 
-    if(!done && priority) {
+    if (!done && priority) {
       switch (priority) {
         case 'high':
           return todo.priority === priority;
 
         case 'normal':
-          return todo
+          return todo;
 
         case 'low':
           return todo.priority === priority;
 
         default:
-          return  todo.priority === priority
+          return todo.priority === priority;
       }
-
     }
-
 
     return todo.title.toLowerCase().includes(tasksFilter);
   };
@@ -123,8 +120,8 @@ export default class Todos extends Component {
 
   updateTodo(todos) {
     this.setState({
-          todos,
-        });
+      todos,
+    });
   }
 
   deleteTodo(id) {
@@ -156,14 +153,9 @@ export default class Todos extends Component {
   }
 
   editTodo() {
-
-    this.setState(() => (
-        {
-         showSaveButton: false
-        }
-    ));
-
-
+    this.setState(() => ({
+      showSaveButton: false,
+    }));
   }
 
   updateTasksFilter(event) {
@@ -172,23 +164,20 @@ export default class Todos extends Component {
     });
   }
 
-
   handleInputChange(event) {
     const { target } = event;
     const { value } = target;
     const { name } = target;
 
-    const {done} = this.state;
-
+    const { done } = this.state;
 
     this.setState({
       [name]: value,
       priority: name === 'priority' ? value : '',
-      done: !done
+      done: !done,
     });
     // console.log('NAME:',event.target.name)
     // console.log('VALUE:',event.target.value)
-
 
     // if(name === 'priority') {
     //   this.setState({
@@ -205,14 +194,10 @@ export default class Todos extends Component {
     //   });
     //
     // }
-
-
-
   }
 
-
   render() {
-    const { todos, isModalShown, showSaveButton, tasksFilter, currentTodoId} = this.state;
+    const { todos, isModalShown, showSaveButton, tasksFilter, currentTodoId } = this.state;
 
     const completed = (a, b) => (a > b) - (a < b);
 
@@ -235,10 +220,11 @@ export default class Todos extends Component {
       ));
 
     return (
-        <TodoProvider value={{
-        todos,
+      <TodoProvider
+        value={{
+          todos,
         }}
-        >
+      >
         <main>
           <div className="container">
             <section className={Styles.toolbar}>
@@ -252,13 +238,23 @@ export default class Todos extends Component {
                 />
               </div>
               <div>
-                <select name="done" className="status" defaultValue="open" onChange={this.handleInputChange}>
+                <select
+                  name="done"
+                  className="status"
+                  defaultValue="open"
+                  onChange={this.handleInputChange}
+                >
                   <option value="open">open</option>
                   <option value="done">done</option>
                 </select>
               </div>
               <div>
-                <select name="priority" className="priority" defaultValue="normal" onChange={this.handleInputChange}>
+                <select
+                  name="priority"
+                  className="priority"
+                  defaultValue="normal"
+                  onChange={this.handleInputChange}
+                >
                   <option value="high">high</option>
                   <option value="normal">normal</option>
                   <option value="low">low</option>
@@ -271,11 +267,7 @@ export default class Todos extends Component {
               </div>
             </section>
             <section className={Styles.todos}>
-              <ul className={Styles.grid}>
-                {
-                  todoJSX
-                }
-                </ul>
+              <ul className={Styles.grid}>{todoJSX}</ul>
             </section>
           </div>
           <div
@@ -283,19 +275,19 @@ export default class Todos extends Component {
               this.node = node;
             }}
           >
-            {isModalShown &&
+            {isModalShown && (
               <Modal
                 createTodo={this.createTodo}
-                updateTodo = {this.updateTodo}
+                updateTodo={this.updateTodo}
                 toggleModal={this.toggleModal}
-                showSaveButton = {showSaveButton}
-                currentTodoId = {currentTodoId}
+                showSaveButton={showSaveButton}
+                currentTodoId={currentTodoId}
               />
-            }
+            )}
             {isModalShown && <div className={Styles.modalWrapper} />}
           </div>
         </main>
-        </TodoProvider>
+      </TodoProvider>
     );
   }
 }

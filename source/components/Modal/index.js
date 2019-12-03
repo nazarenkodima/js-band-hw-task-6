@@ -13,11 +13,10 @@ export default class Modal extends Component {
     super(props);
 
     this.state = {
-      id: undefined,
       title: '',
       description: '',
       priority: 'normal',
-      done: false
+      done: false,
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -28,30 +27,26 @@ export default class Modal extends Component {
   }
 
   componentDidMount() {
-  this.fillTodo()
-
+    this.fillTodo();
   }
 
   fillTodo() {
-    const {todos} = this.context;
-    const {currentTodoId} = this.props;
+    const { todos } = this.context;
+    const { currentTodoId } = this.props;
 
     todos.map(todo => {
       const t = todo;
       if (t.id === currentTodoId) {
-
         this.setState({
-          id: t.id,
           title: t.title,
           description: t.description,
           priority: t.priority,
-          done: t.done
-        })
+          done: t.done,
+        });
       }
       return todo;
     });
   }
-
 
   handleInputChange(event) {
     const { target } = event;
@@ -67,7 +62,6 @@ export default class Modal extends Component {
     const { createTodo, toggleModal } = this.props;
     const { title, description, priority, done } = this.state;
 
-
     if (!title.trim()) {
       return null;
     }
@@ -81,21 +75,19 @@ export default class Modal extends Component {
     });
 
     toggleModal();
-
   }
 
   updateTodo() {
-    const {updateTodo, currentTodoId, toggleModal} = this.props;
-    const {title, description, priority } = this.state;
-    const {todos} = this.context;
+    const { updateTodo, currentTodoId, toggleModal } = this.props;
+    const { title, description, priority } = this.state;
+    const { todos } = this.context;
 
-
-    todos.map((todo) => {
+    todos.map(todo => {
       const t = todo;
       if (todo.id === currentTodoId) {
         t.title = title;
         t.description = description;
-        t.priority = priority
+        t.priority = priority;
       }
 
       return t;
@@ -103,8 +95,7 @@ export default class Modal extends Component {
 
     updateTodo(todos);
 
-
-    toggleModal()
+    toggleModal();
   }
 
   cancelTodo() {
@@ -115,7 +106,6 @@ export default class Modal extends Component {
   render() {
     const { title, description, priority } = this.state;
     const { showSaveButton } = this.props;
-
 
     return (
       <>
@@ -172,9 +162,10 @@ export default class Modal extends Component {
                 </button>
               ) : (
                 <button
-                    className="button btn btn-dark update-todo"
-                    type="button"
-                    onClick={this.updateTodo}>
+                  className="button btn btn-dark update-todo"
+                  type="button"
+                  onClick={this.updateTodo}
+                >
                   Update
                 </button>
               )}

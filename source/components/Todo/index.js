@@ -27,7 +27,7 @@ export default class Todo extends PureComponent {
   }
 
   editTodo() {
-    const { toggleModal, id, editTodo} = this.props;
+    const { toggleModal, id, editTodo } = this.props;
 
     toggleModal(id);
     editTodo();
@@ -48,11 +48,7 @@ export default class Todo extends PureComponent {
               <button className="button btn btn-dark" type="button" onClick={this.todoDone}>
                 done
               </button>
-              <button
-                className="button btn btn-dark"
-                type="button"
-                onClick={this.editTodo}
-              >
+              <button className="button btn btn-dark" type="button" onClick={this.editTodo}>
                 edit
               </button>
               <button className="button btn btn-dark" type="button" onClick={this.deleteTodo}>
@@ -62,8 +58,6 @@ export default class Todo extends PureComponent {
           </div>
         </div>
       </li>
-
-
     );
   }
 }
