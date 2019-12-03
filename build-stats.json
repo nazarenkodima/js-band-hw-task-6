@@ -2,27 +2,27 @@
   "errors": [
   ],
   "warnings": [
-    "asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).\nThis can impact web performance.\nAssets: \n  js/source.8f631.js (249 KiB)",
-    "entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  source (405 KiB)\n      css/9bf595676965835bee1a.6ae29.css\n      js/source.8f631.js\n",
+    "asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).\nThis can impact web performance.\nAssets: \n  js/source.2ea23.js (249 KiB)",
+    "entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  source (405 KiB)\n      css/9bf595676965835bee1a.5dafd.css\n      js/source.2ea23.js\n",
     "webpack performance recommendations: \nYou can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.\nFor more info visit https://webpack.js.org/guides/code-splitting/"
   ],
   "version": "4.41.2",
-  "hash": "6ae29464162f6dd7326b",
-  "time": 14363,
-  "builtAt": 1575366968996,
+  "hash": "5dafdf8c23b80059468f",
+  "time": 14473,
+  "builtAt": 1575367234690,
   "publicPath": "./",
   "outputPath": "/home/travis/build/nazarenkodima/js-band-hw-task-6/build",
   "assetsByChunkName": {
     "source": [
-      "css/9bf595676965835bee1a.6ae29.css",
-      "js/source.8f631.js",
-      "css/9bf595676965835bee1a.6ae29.css.map",
-      "js/source.8f631.js.map"
+      "css/9bf595676965835bee1a.5dafd.css",
+      "js/source.2ea23.js",
+      "css/9bf595676965835bee1a.5dafd.css.map",
+      "js/source.2ea23.js.map"
     ]
   },
   "assets": [
     {
-      "name": "css/9bf595676965835bee1a.6ae29.css",
+      "name": "css/9bf595676965835bee1a.5dafd.css",
       "size": 159889,
       "chunks": [
         0
@@ -36,7 +36,7 @@
       "emitted": true
     },
     {
-      "name": "css/9bf595676965835bee1a.6ae29.css.map",
+      "name": "css/9bf595676965835bee1a.5dafd.css.map",
       "size": 476392,
       "chunks": [
         0
@@ -512,8 +512,8 @@
       "emitted": true
     },
     {
-      "name": "js/source.8f631.js",
-      "size": 254933,
+      "name": "js/source.2ea23.js",
+      "size": 254908,
       "chunks": [
         0
       ],
@@ -527,8 +527,8 @@
       "isOverSizeLimit": true
     },
     {
-      "name": "js/source.8f631.js.map",
-      "size": 314340,
+      "name": "js/source.2ea23.js.map",
+      "size": 314296,
       "chunks": [
         0
       ],
@@ -548,10 +548,10 @@
         0
       ],
       "assets": [
-        "css/9bf595676965835bee1a.6ae29.css",
-        "js/source.8f631.js",
-        "css/9bf595676965835bee1a.6ae29.css.map",
-        "js/source.8f631.js.map"
+        "css/9bf595676965835bee1a.5dafd.css",
+        "js/source.2ea23.js",
+        "css/9bf595676965835bee1a.5dafd.css.map",
+        "js/source.2ea23.js.map"
       ],
       "children": {
       },
@@ -566,10 +566,10 @@
         0
       ],
       "assets": [
-        "css/9bf595676965835bee1a.6ae29.css",
-        "js/source.8f631.js",
-        "css/9bf595676965835bee1a.6ae29.css.map",
-        "js/source.8f631.js.map"
+        "css/9bf595676965835bee1a.5dafd.css",
+        "js/source.2ea23.js",
+        "css/9bf595676965835bee1a.5dafd.css.map",
+        "js/source.2ea23.js.map"
       ],
       "children": {
       },
@@ -584,17 +584,17 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 406492,
+      "size": 406467,
       "names": [
         "source"
       ],
       "files": [
-        "css/9bf595676965835bee1a.6ae29.css",
-        "js/source.8f631.js",
-        "css/9bf595676965835bee1a.6ae29.css.map",
-        "js/source.8f631.js.map"
+        "css/9bf595676965835bee1a.5dafd.css",
+        "js/source.2ea23.js",
+        "css/9bf595676965835bee1a.5dafd.css.map",
+        "js/source.2ea23.js.map"
       ],
-      "hash": "8f631728d4e8f6062814",
+      "hash": "2ea23254e965caf2a39e",
       "siblings": [
       ],
       "parents": [
@@ -1298,6 +1298,33 @@
               "moduleName": "./source/pages/Scheduler.js + 6 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
+              "loc": "89:13-18"
+            },
+            {
+              "moduleId": 35,
+              "moduleIdentifier": "/home/travis/build/nazarenkodima/js-band-hw-task-6/node_modules/babel-loader/lib/index.js!/home/travis/build/nazarenkodima/js-band-hw-task-6/source/pages/Scheduler.js 356cfe2293005b7e3165d0c5435848b1",
+              "module": "./source/pages/Scheduler.js + 6 modules",
+              "moduleName": "./source/pages/Scheduler.js + 6 modules",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "89:33-38"
+            },
+            {
+              "moduleId": 35,
+              "moduleIdentifier": "/home/travis/build/nazarenkodima/js-band-hw-task-6/node_modules/babel-loader/lib/index.js!/home/travis/build/nazarenkodima/js-band-hw-task-6/source/pages/Scheduler.js 356cfe2293005b7e3165d0c5435848b1",
+              "module": "./source/pages/Scheduler.js + 6 modules",
+              "moduleName": "./source/pages/Scheduler.js + 6 modules",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "89:55-60"
+            },
+            {
+              "moduleId": 35,
+              "moduleIdentifier": "/home/travis/build/nazarenkodima/js-band-hw-task-6/node_modules/babel-loader/lib/index.js!/home/travis/build/nazarenkodima/js-band-hw-task-6/source/pages/Scheduler.js 356cfe2293005b7e3165d0c5435848b1",
+              "module": "./source/pages/Scheduler.js + 6 modules",
+              "moduleName": "./source/pages/Scheduler.js + 6 modules",
+              "type": "harmony import specifier",
+              "userRequest": "react",
               "loc": "90:9-14"
             },
             {
@@ -1307,7 +1334,7 @@
               "moduleName": "./source/pages/Scheduler.js + 6 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "90:13-18"
+              "loc": "91:9-14"
             },
             {
               "moduleId": 35,
@@ -1316,34 +1343,7 @@
               "moduleName": "./source/pages/Scheduler.js + 6 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "90:33-38"
-            },
-            {
-              "moduleId": 35,
-              "moduleIdentifier": "/home/travis/build/nazarenkodima/js-band-hw-task-6/node_modules/babel-loader/lib/index.js!/home/travis/build/nazarenkodima/js-band-hw-task-6/source/pages/Scheduler.js 356cfe2293005b7e3165d0c5435848b1",
-              "module": "./source/pages/Scheduler.js + 6 modules",
-              "moduleName": "./source/pages/Scheduler.js + 6 modules",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "90:55-60"
-            },
-            {
-              "moduleId": 35,
-              "moduleIdentifier": "/home/travis/build/nazarenkodima/js-band-hw-task-6/node_modules/babel-loader/lib/index.js!/home/travis/build/nazarenkodima/js-band-hw-task-6/source/pages/Scheduler.js 356cfe2293005b7e3165d0c5435848b1",
-              "module": "./source/pages/Scheduler.js + 6 modules",
-              "moduleName": "./source/pages/Scheduler.js + 6 modules",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "92:9-14"
-            },
-            {
-              "moduleId": 35,
-              "moduleIdentifier": "/home/travis/build/nazarenkodima/js-band-hw-task-6/node_modules/babel-loader/lib/index.js!/home/travis/build/nazarenkodima/js-band-hw-task-6/source/pages/Scheduler.js 356cfe2293005b7e3165d0c5435848b1",
-              "module": "./source/pages/Scheduler.js + 6 modules",
-              "moduleName": "./source/pages/Scheduler.js + 6 modules",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "94:9-14"
+              "loc": "93:9-14"
             },
             {
               "moduleId": 35,
@@ -1361,6 +1361,15 @@
               "moduleName": "./source/pages/Scheduler.js + 6 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
+              "loc": "100:11-16"
+            },
+            {
+              "moduleId": 35,
+              "moduleIdentifier": "/home/travis/build/nazarenkodima/js-band-hw-task-6/node_modules/babel-loader/lib/index.js!/home/travis/build/nazarenkodima/js-band-hw-task-6/source/pages/Scheduler.js 356cfe2293005b7e3165d0c5435848b1",
+              "module": "./source/pages/Scheduler.js + 6 modules",
+              "moduleName": "./source/pages/Scheduler.js + 6 modules",
+              "type": "harmony import specifier",
+              "userRequest": "react",
               "loc": "100:18-23"
             },
             {
@@ -1370,16 +1379,7 @@
               "moduleName": "./source/pages/Scheduler.js + 6 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "101:11-16"
-            },
-            {
-              "moduleId": 35,
-              "moduleIdentifier": "/home/travis/build/nazarenkodima/js-band-hw-task-6/node_modules/babel-loader/lib/index.js!/home/travis/build/nazarenkodima/js-band-hw-task-6/source/pages/Scheduler.js 356cfe2293005b7e3165d0c5435848b1",
-              "module": "./source/pages/Scheduler.js + 6 modules",
-              "moduleName": "./source/pages/Scheduler.js + 6 modules",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "103:9-14"
+              "loc": "102:9-14"
             },
             {
               "moduleId": 35,
@@ -1397,7 +1397,7 @@
               "moduleName": "./source/pages/Scheduler.js + 6 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "111:11-16"
+              "loc": "110:11-16"
             },
             {
               "moduleId": 35,
@@ -1406,7 +1406,7 @@
               "moduleName": "./source/pages/Scheduler.js + 6 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "116:9-14"
+              "loc": "115:9-14"
             },
             {
               "moduleId": 35,
@@ -1415,7 +1415,7 @@
               "moduleName": "./source/pages/Scheduler.js + 6 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "118:18-23"
+              "loc": "117:18-23"
             },
             {
               "moduleId": 35,
@@ -1424,7 +1424,7 @@
               "moduleName": "./source/pages/Scheduler.js + 6 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "120:20-25"
+              "loc": "119:20-25"
             },
             {
               "moduleId": 35,
@@ -1433,7 +1433,7 @@
               "moduleName": "./source/pages/Scheduler.js + 6 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "122:18-23"
+              "loc": "121:18-23"
             },
             {
               "moduleId": 35,
@@ -1442,7 +1442,7 @@
               "moduleName": "./source/pages/Scheduler.js + 6 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "124:9-14"
+              "loc": "123:9-14"
             },
             {
               "moduleId": 35,
@@ -1451,7 +1451,7 @@
               "moduleName": "./source/pages/Scheduler.js + 6 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "124:42-47"
+              "loc": "123:42-47"
             },
             {
               "moduleId": 35,
@@ -1460,7 +1460,7 @@
               "moduleName": "./source/pages/Scheduler.js + 6 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "128:21-26"
+              "loc": "127:21-26"
             },
             {
               "moduleId": 35,
@@ -1469,7 +1469,7 @@
               "moduleName": "./source/pages/Scheduler.js + 6 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "128:67-72"
+              "loc": "127:67-72"
             },
             {
               "moduleId": 35,
@@ -1478,7 +1478,7 @@
               "moduleName": "./source/pages/Scheduler.js + 6 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "132:19-24"
+              "loc": "131:19-24"
             },
             {
               "moduleId": 35,
@@ -1487,7 +1487,7 @@
               "moduleName": "./source/pages/Scheduler.js + 6 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "141:2-11"
+              "loc": "140:2-11"
             },
             {
               "moduleId": 35,
@@ -4735,7 +4735,7 @@
               "moduleName": "./source/pages/Scheduler.js + 6 modules",
               "type": "harmony import specifier",
               "userRequest": "./styles.m.css",
-              "loc": "91:19-25"
+              "loc": "90:19-25"
             },
             {
               "moduleId": 35,
@@ -4744,7 +4744,7 @@
               "moduleName": "./source/pages/Scheduler.js + 6 modules",
               "type": "harmony import specifier",
               "userRequest": "./styles.m.css",
-              "loc": "95:19-25"
+              "loc": "94:19-25"
             },
             {
               "moduleId": 35,
@@ -4753,7 +4753,7 @@
               "moduleName": "./source/pages/Scheduler.js + 6 modules",
               "type": "harmony import specifier",
               "userRequest": "./styles.m.css",
-              "loc": "106:19-25"
+              "loc": "105:19-25"
             },
             {
               "moduleId": 35,
@@ -4762,7 +4762,7 @@
               "moduleName": "./source/pages/Scheduler.js + 6 modules",
               "type": "harmony import specifier",
               "userRequest": "./styles.m.css",
-              "loc": "123:19-25"
+              "loc": "122:19-25"
             }
           ],
           "usedExports": [
@@ -5978,7 +5978,7 @@
           "name": "./source/pages/Scheduler.js + 6 modules",
           "index": 23,
           "index2": 44,
-          "size": 20275,
+          "size": 20250,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -6392,7 +6392,7 @@
               "name": "./source/components/Modal/index.js",
               "index": 39,
               "index2": 37,
-              "size": 4705,
+              "size": 4680,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -6458,7 +6458,7 @@
               "optimizationBailout": [
               ],
               "depth": 4,
-              "source": "import _defineProperty from \"@babel/runtime/helpers/defineProperty\";\nimport _classCallCheck from \"@babel/runtime/helpers/classCallCheck\";\nimport _createClass from \"@babel/runtime/helpers/createClass\";\nimport _possibleConstructorReturn from \"@babel/runtime/helpers/possibleConstructorReturn\";\nimport _getPrototypeOf from \"@babel/runtime/helpers/getPrototypeOf\";\nimport _assertThisInitialized from \"@babel/runtime/helpers/assertThisInitialized\";\nimport _inherits from \"@babel/runtime/helpers/inherits\";\n// Core\nimport React, { Component } from 'react';\nimport TodoContext from '../ThemeContext/ThemeContext'; // Instruments\n\nimport Styles from './styles.m.css';\n\nvar Modal =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(Modal, _Component);\n\n  function Modal() {\n    var _this;\n\n    _classCallCheck(this, Modal);\n\n    _this = _possibleConstructorReturn(this, _getPrototypeOf(Modal).call(this));\n    _this.state = {\n      title: '',\n      description: '',\n      priority: 'normal'\n    };\n    _this.handleInputChange = _this.handleInputChange.bind(_assertThisInitialized(_this));\n    _this.createTodo = _this.createTodo.bind(_assertThisInitialized(_this));\n    _this.cancelTodo = _this.cancelTodo.bind(_assertThisInitialized(_this)); // this.updateTodo = this.updateTodo.bind(this);\n\n    return _this;\n  }\n\n  _createClass(Modal, [{\n    key: \"handleInputChange\",\n    value: function handleInputChange(event) {\n      var target = event.target;\n      var value = target.value;\n      var name = target.name;\n      this.setState(_defineProperty({}, name, value));\n    }\n  }, {\n    key: \"createTodo\",\n    value: function createTodo() {\n      var _this$props = this.props,\n          createTodo = _this$props.createTodo,\n          toggleModal = _this$props.toggleModal;\n      var _this$state = this.state,\n          title = _this$state.title,\n          description = _this$state.description,\n          priority = _this$state.priority;\n\n      if (!title.trim()) {\n        return null;\n      }\n\n      createTodo({\n        id: Date.now().toString(),\n        title: title,\n        description: description,\n        done: false,\n        priority: priority\n      });\n      toggleModal();\n      return createTodo;\n    } // updateTodo() {\n    // const { updateTodo, toggleModal } = this.props;\n    // console.log(this.context);\n    // }\n\n  }, {\n    key: \"cancelTodo\",\n    value: function cancelTodo() {\n      var toggleModal = this.props.toggleModal;\n      toggleModal();\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      var _this$state2 = this.state,\n          title = _this$state2.title,\n          description = _this$state2.description,\n          priority = _this$state2.priority;\n      var saveButton = this.props.saveButton;\n      console.log('savebutton', saveButton); // const { save } = this.context;\n\n      return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n        className: Styles.todoModal\n      }, React.createElement(\"label\", {\n        htmlFor: \"title\"\n      }, React.createElement(\"input\", {\n        className: Styles.createInput,\n        name: \"title\",\n        type: \"text\",\n        placeholder: \"title\",\n        value: title,\n        onChange: this.handleInputChange\n      })), React.createElement(\"label\", {\n        htmlFor: \"description\"\n      }, React.createElement(\"textarea\", {\n        value: description,\n        name: \"description\",\n        className: Styles.createDescription,\n        cols: \"30\",\n        rows: \"10\",\n        placeholder: \"description\",\n        onChange: this.handleInputChange\n      })), React.createElement(\"select\", {\n        className: \"create-priority\",\n        name: \"priority\",\n        value: priority,\n        onChange: this.handleInputChange\n      }, React.createElement(\"option\", {\n        value: \"high\"\n      }, \"high\"), React.createElement(\"option\", {\n        value: \"normal\"\n      }, \"normal\"), React.createElement(\"option\", {\n        value: \"low\"\n      }, \"low\")), React.createElement(\"div\", {\n        className: Styles.modalActions\n      }, React.createElement(\"div\", null, React.createElement(\"button\", {\n        className: \"button btn btn-dark cancel-todo\",\n        type: \"button\",\n        onClick: this.cancelTodo\n      }, \"Cancel\")), React.createElement(\"div\", null, saveButton ? React.createElement(\"button\", {\n        className: \"button btn btn-dark save-todo\",\n        type: \"button\",\n        onClick: this.createTodo\n      }, \"Save\") : React.createElement(\"button\", {\n        className: \"button btn btn-dark update-todo\",\n        type: \"button\",\n        onClick: this.updateTodo\n      }, \"Update\")))));\n    }\n  }]);\n\n  return Modal;\n}(Component);\n\nexport { Modal as default };\nModal.contextType = TodoContext;"
+              "source": "import _defineProperty from \"@babel/runtime/helpers/defineProperty\";\nimport _classCallCheck from \"@babel/runtime/helpers/classCallCheck\";\nimport _createClass from \"@babel/runtime/helpers/createClass\";\nimport _possibleConstructorReturn from \"@babel/runtime/helpers/possibleConstructorReturn\";\nimport _getPrototypeOf from \"@babel/runtime/helpers/getPrototypeOf\";\nimport _assertThisInitialized from \"@babel/runtime/helpers/assertThisInitialized\";\nimport _inherits from \"@babel/runtime/helpers/inherits\";\n// Core\nimport React, { Component } from 'react';\nimport TodoContext from '../ThemeContext/ThemeContext'; // Instruments\n\nimport Styles from './styles.m.css';\n\nvar Modal =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(Modal, _Component);\n\n  function Modal() {\n    var _this;\n\n    _classCallCheck(this, Modal);\n\n    _this = _possibleConstructorReturn(this, _getPrototypeOf(Modal).call(this));\n    _this.state = {\n      title: '',\n      description: '',\n      priority: 'normal'\n    };\n    _this.handleInputChange = _this.handleInputChange.bind(_assertThisInitialized(_this));\n    _this.createTodo = _this.createTodo.bind(_assertThisInitialized(_this));\n    _this.cancelTodo = _this.cancelTodo.bind(_assertThisInitialized(_this)); // this.updateTodo = this.updateTodo.bind(this);\n\n    return _this;\n  }\n\n  _createClass(Modal, [{\n    key: \"handleInputChange\",\n    value: function handleInputChange(event) {\n      var target = event.target;\n      var value = target.value;\n      var name = target.name;\n      this.setState(_defineProperty({}, name, value));\n    }\n  }, {\n    key: \"createTodo\",\n    value: function createTodo() {\n      var _this$props = this.props,\n          createTodo = _this$props.createTodo,\n          toggleModal = _this$props.toggleModal;\n      var _this$state = this.state,\n          title = _this$state.title,\n          description = _this$state.description,\n          priority = _this$state.priority;\n\n      if (!title.trim()) {\n        return null;\n      }\n\n      createTodo({\n        id: Date.now().toString(),\n        title: title,\n        description: description,\n        done: false,\n        priority: priority\n      });\n      toggleModal();\n    } // updateTodo() {\n    // const { updateTodo, toggleModal } = this.props;\n    // console.log(this.context);\n    // }\n\n  }, {\n    key: \"cancelTodo\",\n    value: function cancelTodo() {\n      var toggleModal = this.props.toggleModal;\n      toggleModal();\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      var _this$state2 = this.state,\n          title = _this$state2.title,\n          description = _this$state2.description,\n          priority = _this$state2.priority;\n      var saveButton = this.props.saveButton;\n      console.log('savebutton', saveButton); // const { save } = this.context;\n\n      return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n        className: Styles.todoModal\n      }, React.createElement(\"label\", {\n        htmlFor: \"title\"\n      }, React.createElement(\"input\", {\n        className: Styles.createInput,\n        name: \"title\",\n        type: \"text\",\n        placeholder: \"title\",\n        value: title,\n        onChange: this.handleInputChange\n      })), React.createElement(\"label\", {\n        htmlFor: \"description\"\n      }, React.createElement(\"textarea\", {\n        value: description,\n        name: \"description\",\n        className: Styles.createDescription,\n        cols: \"30\",\n        rows: \"10\",\n        placeholder: \"description\",\n        onChange: this.handleInputChange\n      })), React.createElement(\"select\", {\n        className: \"create-priority\",\n        name: \"priority\",\n        value: priority,\n        onChange: this.handleInputChange\n      }, React.createElement(\"option\", {\n        value: \"high\"\n      }, \"high\"), React.createElement(\"option\", {\n        value: \"normal\"\n      }, \"normal\"), React.createElement(\"option\", {\n        value: \"low\"\n      }, \"low\")), React.createElement(\"div\", {\n        className: Styles.modalActions\n      }, React.createElement(\"div\", null, React.createElement(\"button\", {\n        className: \"button btn btn-dark cancel-todo\",\n        type: \"button\",\n        onClick: this.cancelTodo\n      }, \"Cancel\")), React.createElement(\"div\", null, saveButton ? React.createElement(\"button\", {\n        className: \"button btn btn-dark save-todo\",\n        type: \"button\",\n        onClick: this.createTodo\n      }, \"Save\") : React.createElement(\"button\", {\n        className: \"button btn btn-dark update-todo\",\n        type: \"button\",\n        onClick: this.updateTodo\n      }, \"Update\")))));\n    }\n  }]);\n\n  return Modal;\n}(Component);\n\nexport { Modal as default };\nModal.contextType = TodoContext;"
             },
             {
               "id": null,
@@ -6543,7 +6543,7 @@
                   "moduleName": "./source/components/Modal/index.js",
                   "type": "harmony import specifier",
                   "userRequest": "../ThemeContext/ThemeContext",
-                  "loc": "144:20-31"
+                  "loc": "143:20-31"
                 }
               ],
               "usedExports": [
@@ -8642,6 +8642,33 @@
           "moduleName": "./source/pages/Scheduler.js + 6 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
+          "loc": "89:13-18"
+        },
+        {
+          "moduleId": 35,
+          "moduleIdentifier": "/home/travis/build/nazarenkodima/js-band-hw-task-6/node_modules/babel-loader/lib/index.js!/home/travis/build/nazarenkodima/js-band-hw-task-6/source/pages/Scheduler.js 356cfe2293005b7e3165d0c5435848b1",
+          "module": "./source/pages/Scheduler.js + 6 modules",
+          "moduleName": "./source/pages/Scheduler.js + 6 modules",
+          "type": "harmony import specifier",
+          "userRequest": "react",
+          "loc": "89:33-38"
+        },
+        {
+          "moduleId": 35,
+          "moduleIdentifier": "/home/travis/build/nazarenkodima/js-band-hw-task-6/node_modules/babel-loader/lib/index.js!/home/travis/build/nazarenkodima/js-band-hw-task-6/source/pages/Scheduler.js 356cfe2293005b7e3165d0c5435848b1",
+          "module": "./source/pages/Scheduler.js + 6 modules",
+          "moduleName": "./source/pages/Scheduler.js + 6 modules",
+          "type": "harmony import specifier",
+          "userRequest": "react",
+          "loc": "89:55-60"
+        },
+        {
+          "moduleId": 35,
+          "moduleIdentifier": "/home/travis/build/nazarenkodima/js-band-hw-task-6/node_modules/babel-loader/lib/index.js!/home/travis/build/nazarenkodima/js-band-hw-task-6/source/pages/Scheduler.js 356cfe2293005b7e3165d0c5435848b1",
+          "module": "./source/pages/Scheduler.js + 6 modules",
+          "moduleName": "./source/pages/Scheduler.js + 6 modules",
+          "type": "harmony import specifier",
+          "userRequest": "react",
           "loc": "90:9-14"
         },
         {
@@ -8651,7 +8678,7 @@
           "moduleName": "./source/pages/Scheduler.js + 6 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "90:13-18"
+          "loc": "91:9-14"
         },
         {
           "moduleId": 35,
@@ -8660,34 +8687,7 @@
           "moduleName": "./source/pages/Scheduler.js + 6 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "90:33-38"
-        },
-        {
-          "moduleId": 35,
-          "moduleIdentifier": "/home/travis/build/nazarenkodima/js-band-hw-task-6/node_modules/babel-loader/lib/index.js!/home/travis/build/nazarenkodima/js-band-hw-task-6/source/pages/Scheduler.js 356cfe2293005b7e3165d0c5435848b1",
-          "module": "./source/pages/Scheduler.js + 6 modules",
-          "moduleName": "./source/pages/Scheduler.js + 6 modules",
-          "type": "harmony import specifier",
-          "userRequest": "react",
-          "loc": "90:55-60"
-        },
-        {
-          "moduleId": 35,
-          "moduleIdentifier": "/home/travis/build/nazarenkodima/js-band-hw-task-6/node_modules/babel-loader/lib/index.js!/home/travis/build/nazarenkodima/js-band-hw-task-6/source/pages/Scheduler.js 356cfe2293005b7e3165d0c5435848b1",
-          "module": "./source/pages/Scheduler.js + 6 modules",
-          "moduleName": "./source/pages/Scheduler.js + 6 modules",
-          "type": "harmony import specifier",
-          "userRequest": "react",
-          "loc": "92:9-14"
-        },
-        {
-          "moduleId": 35,
-          "moduleIdentifier": "/home/travis/build/nazarenkodima/js-band-hw-task-6/node_modules/babel-loader/lib/index.js!/home/travis/build/nazarenkodima/js-band-hw-task-6/source/pages/Scheduler.js 356cfe2293005b7e3165d0c5435848b1",
-          "module": "./source/pages/Scheduler.js + 6 modules",
-          "moduleName": "./source/pages/Scheduler.js + 6 modules",
-          "type": "harmony import specifier",
-          "userRequest": "react",
-          "loc": "94:9-14"
+          "loc": "93:9-14"
         },
         {
           "moduleId": 35,
@@ -8705,6 +8705,15 @@
           "moduleName": "./source/pages/Scheduler.js + 6 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
+          "loc": "100:11-16"
+        },
+        {
+          "moduleId": 35,
+          "moduleIdentifier": "/home/travis/build/nazarenkodima/js-band-hw-task-6/node_modules/babel-loader/lib/index.js!/home/travis/build/nazarenkodima/js-band-hw-task-6/source/pages/Scheduler.js 356cfe2293005b7e3165d0c5435848b1",
+          "module": "./source/pages/Scheduler.js + 6 modules",
+          "moduleName": "./source/pages/Scheduler.js + 6 modules",
+          "type": "harmony import specifier",
+          "userRequest": "react",
           "loc": "100:18-23"
         },
         {
@@ -8714,16 +8723,7 @@
           "moduleName": "./source/pages/Scheduler.js + 6 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "101:11-16"
-        },
-        {
-          "moduleId": 35,
-          "moduleIdentifier": "/home/travis/build/nazarenkodima/js-band-hw-task-6/node_modules/babel-loader/lib/index.js!/home/travis/build/nazarenkodima/js-band-hw-task-6/source/pages/Scheduler.js 356cfe2293005b7e3165d0c5435848b1",
-          "module": "./source/pages/Scheduler.js + 6 modules",
-          "moduleName": "./source/pages/Scheduler.js + 6 modules",
-          "type": "harmony import specifier",
-          "userRequest": "react",
-          "loc": "103:9-14"
+          "loc": "102:9-14"
         },
         {
           "moduleId": 35,
@@ -8741,7 +8741,7 @@
           "moduleName": "./source/pages/Scheduler.js + 6 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "111:11-16"
+          "loc": "110:11-16"
         },
         {
           "moduleId": 35,
@@ -8750,7 +8750,7 @@
           "moduleName": "./source/pages/Scheduler.js + 6 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "116:9-14"
+          "loc": "115:9-14"
         },
         {
           "moduleId": 35,
@@ -8759,7 +8759,7 @@
           "moduleName": "./source/pages/Scheduler.js + 6 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "118:18-23"
+          "loc": "117:18-23"
         },
         {
           "moduleId": 35,
@@ -8768,7 +8768,7 @@
           "moduleName": "./source/pages/Scheduler.js + 6 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "120:20-25"
+          "loc": "119:20-25"
         },
         {
           "moduleId": 35,
@@ -8777,7 +8777,7 @@
           "moduleName": "./source/pages/Scheduler.js + 6 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "122:18-23"
+          "loc": "121:18-23"
         },
         {
           "moduleId": 35,
@@ -8786,7 +8786,7 @@
           "moduleName": "./source/pages/Scheduler.js + 6 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "124:9-14"
+          "loc": "123:9-14"
         },
         {
           "moduleId": 35,
@@ -8795,7 +8795,7 @@
           "moduleName": "./source/pages/Scheduler.js + 6 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "124:42-47"
+          "loc": "123:42-47"
         },
         {
           "moduleId": 35,
@@ -8804,7 +8804,7 @@
           "moduleName": "./source/pages/Scheduler.js + 6 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "128:21-26"
+          "loc": "127:21-26"
         },
         {
           "moduleId": 35,
@@ -8813,7 +8813,7 @@
           "moduleName": "./source/pages/Scheduler.js + 6 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "128:67-72"
+          "loc": "127:67-72"
         },
         {
           "moduleId": 35,
@@ -8822,7 +8822,7 @@
           "moduleName": "./source/pages/Scheduler.js + 6 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "132:19-24"
+          "loc": "131:19-24"
         },
         {
           "moduleId": 35,
@@ -8831,7 +8831,7 @@
           "moduleName": "./source/pages/Scheduler.js + 6 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "141:2-11"
+          "loc": "140:2-11"
         },
         {
           "moduleId": 35,
@@ -12079,7 +12079,7 @@
           "moduleName": "./source/pages/Scheduler.js + 6 modules",
           "type": "harmony import specifier",
           "userRequest": "./styles.m.css",
-          "loc": "91:19-25"
+          "loc": "90:19-25"
         },
         {
           "moduleId": 35,
@@ -12088,7 +12088,7 @@
           "moduleName": "./source/pages/Scheduler.js + 6 modules",
           "type": "harmony import specifier",
           "userRequest": "./styles.m.css",
-          "loc": "95:19-25"
+          "loc": "94:19-25"
         },
         {
           "moduleId": 35,
@@ -12097,7 +12097,7 @@
           "moduleName": "./source/pages/Scheduler.js + 6 modules",
           "type": "harmony import specifier",
           "userRequest": "./styles.m.css",
-          "loc": "106:19-25"
+          "loc": "105:19-25"
         },
         {
           "moduleId": 35,
@@ -12106,7 +12106,7 @@
           "moduleName": "./source/pages/Scheduler.js + 6 modules",
           "type": "harmony import specifier",
           "userRequest": "./styles.m.css",
-          "loc": "123:19-25"
+          "loc": "122:19-25"
         }
       ],
       "usedExports": [
@@ -13403,7 +13403,7 @@
       "name": "./source/pages/Scheduler.js + 6 modules",
       "index": 23,
       "index2": 44,
-      "size": 20275,
+      "size": 20250,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -13817,7 +13817,7 @@
           "name": "./source/components/Modal/index.js",
           "index": 39,
           "index2": 37,
-          "size": 4705,
+          "size": 4680,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -13883,7 +13883,7 @@
           "optimizationBailout": [
           ],
           "depth": 4,
-          "source": "import _defineProperty from \"@babel/runtime/helpers/defineProperty\";\nimport _classCallCheck from \"@babel/runtime/helpers/classCallCheck\";\nimport _createClass from \"@babel/runtime/helpers/createClass\";\nimport _possibleConstructorReturn from \"@babel/runtime/helpers/possibleConstructorReturn\";\nimport _getPrototypeOf from \"@babel/runtime/helpers/getPrototypeOf\";\nimport _assertThisInitialized from \"@babel/runtime/helpers/assertThisInitialized\";\nimport _inherits from \"@babel/runtime/helpers/inherits\";\n// Core\nimport React, { Component } from 'react';\nimport TodoContext from '../ThemeContext/ThemeContext'; // Instruments\n\nimport Styles from './styles.m.css';\n\nvar Modal =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(Modal, _Component);\n\n  function Modal() {\n    var _this;\n\n    _classCallCheck(this, Modal);\n\n    _this = _possibleConstructorReturn(this, _getPrototypeOf(Modal).call(this));\n    _this.state = {\n      title: '',\n      description: '',\n      priority: 'normal'\n    };\n    _this.handleInputChange = _this.handleInputChange.bind(_assertThisInitialized(_this));\n    _this.createTodo = _this.createTodo.bind(_assertThisInitialized(_this));\n    _this.cancelTodo = _this.cancelTodo.bind(_assertThisInitialized(_this)); // this.updateTodo = this.updateTodo.bind(this);\n\n    return _this;\n  }\n\n  _createClass(Modal, [{\n    key: \"handleInputChange\",\n    value: function handleInputChange(event) {\n      var target = event.target;\n      var value = target.value;\n      var name = target.name;\n      this.setState(_defineProperty({}, name, value));\n    }\n  }, {\n    key: \"createTodo\",\n    value: function createTodo() {\n      var _this$props = this.props,\n          createTodo = _this$props.createTodo,\n          toggleModal = _this$props.toggleModal;\n      var _this$state = this.state,\n          title = _this$state.title,\n          description = _this$state.description,\n          priority = _this$state.priority;\n\n      if (!title.trim()) {\n        return null;\n      }\n\n      createTodo({\n        id: Date.now().toString(),\n        title: title,\n        description: description,\n        done: false,\n        priority: priority\n      });\n      toggleModal();\n      return createTodo;\n    } // updateTodo() {\n    // const { updateTodo, toggleModal } = this.props;\n    // console.log(this.context);\n    // }\n\n  }, {\n    key: \"cancelTodo\",\n    value: function cancelTodo() {\n      var toggleModal = this.props.toggleModal;\n      toggleModal();\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      var _this$state2 = this.state,\n          title = _this$state2.title,\n          description = _this$state2.description,\n          priority = _this$state2.priority;\n      var saveButton = this.props.saveButton;\n      console.log('savebutton', saveButton); // const { save } = this.context;\n\n      return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n        className: Styles.todoModal\n      }, React.createElement(\"label\", {\n        htmlFor: \"title\"\n      }, React.createElement(\"input\", {\n        className: Styles.createInput,\n        name: \"title\",\n        type: \"text\",\n        placeholder: \"title\",\n        value: title,\n        onChange: this.handleInputChange\n      })), React.createElement(\"label\", {\n        htmlFor: \"description\"\n      }, React.createElement(\"textarea\", {\n        value: description,\n        name: \"description\",\n        className: Styles.createDescription,\n        cols: \"30\",\n        rows: \"10\",\n        placeholder: \"description\",\n        onChange: this.handleInputChange\n      })), React.createElement(\"select\", {\n        className: \"create-priority\",\n        name: \"priority\",\n        value: priority,\n        onChange: this.handleInputChange\n      }, React.createElement(\"option\", {\n        value: \"high\"\n      }, \"high\"), React.createElement(\"option\", {\n        value: \"normal\"\n      }, \"normal\"), React.createElement(\"option\", {\n        value: \"low\"\n      }, \"low\")), React.createElement(\"div\", {\n        className: Styles.modalActions\n      }, React.createElement(\"div\", null, React.createElement(\"button\", {\n        className: \"button btn btn-dark cancel-todo\",\n        type: \"button\",\n        onClick: this.cancelTodo\n      }, \"Cancel\")), React.createElement(\"div\", null, saveButton ? React.createElement(\"button\", {\n        className: \"button btn btn-dark save-todo\",\n        type: \"button\",\n        onClick: this.createTodo\n      }, \"Save\") : React.createElement(\"button\", {\n        className: \"button btn btn-dark update-todo\",\n        type: \"button\",\n        onClick: this.updateTodo\n      }, \"Update\")))));\n    }\n  }]);\n\n  return Modal;\n}(Component);\n\nexport { Modal as default };\nModal.contextType = TodoContext;"
+          "source": "import _defineProperty from \"@babel/runtime/helpers/defineProperty\";\nimport _classCallCheck from \"@babel/runtime/helpers/classCallCheck\";\nimport _createClass from \"@babel/runtime/helpers/createClass\";\nimport _possibleConstructorReturn from \"@babel/runtime/helpers/possibleConstructorReturn\";\nimport _getPrototypeOf from \"@babel/runtime/helpers/getPrototypeOf\";\nimport _assertThisInitialized from \"@babel/runtime/helpers/assertThisInitialized\";\nimport _inherits from \"@babel/runtime/helpers/inherits\";\n// Core\nimport React, { Component } from 'react';\nimport TodoContext from '../ThemeContext/ThemeContext'; // Instruments\n\nimport Styles from './styles.m.css';\n\nvar Modal =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(Modal, _Component);\n\n  function Modal() {\n    var _this;\n\n    _classCallCheck(this, Modal);\n\n    _this = _possibleConstructorReturn(this, _getPrototypeOf(Modal).call(this));\n    _this.state = {\n      title: '',\n      description: '',\n      priority: 'normal'\n    };\n    _this.handleInputChange = _this.handleInputChange.bind(_assertThisInitialized(_this));\n    _this.createTodo = _this.createTodo.bind(_assertThisInitialized(_this));\n    _this.cancelTodo = _this.cancelTodo.bind(_assertThisInitialized(_this)); // this.updateTodo = this.updateTodo.bind(this);\n\n    return _this;\n  }\n\n  _createClass(Modal, [{\n    key: \"handleInputChange\",\n    value: function handleInputChange(event) {\n      var target = event.target;\n      var value = target.value;\n      var name = target.name;\n      this.setState(_defineProperty({}, name, value));\n    }\n  }, {\n    key: \"createTodo\",\n    value: function createTodo() {\n      var _this$props = this.props,\n          createTodo = _this$props.createTodo,\n          toggleModal = _this$props.toggleModal;\n      var _this$state = this.state,\n          title = _this$state.title,\n          description = _this$state.description,\n          priority = _this$state.priority;\n\n      if (!title.trim()) {\n        return null;\n      }\n\n      createTodo({\n        id: Date.now().toString(),\n        title: title,\n        description: description,\n        done: false,\n        priority: priority\n      });\n      toggleModal();\n    } // updateTodo() {\n    // const { updateTodo, toggleModal } = this.props;\n    // console.log(this.context);\n    // }\n\n  }, {\n    key: \"cancelTodo\",\n    value: function cancelTodo() {\n      var toggleModal = this.props.toggleModal;\n      toggleModal();\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      var _this$state2 = this.state,\n          title = _this$state2.title,\n          description = _this$state2.description,\n          priority = _this$state2.priority;\n      var saveButton = this.props.saveButton;\n      console.log('savebutton', saveButton); // const { save } = this.context;\n\n      return React.createElement(React.Fragment, null, React.createElement(\"div\", {\n        className: Styles.todoModal\n      }, React.createElement(\"label\", {\n        htmlFor: \"title\"\n      }, React.createElement(\"input\", {\n        className: Styles.createInput,\n        name: \"title\",\n        type: \"text\",\n        placeholder: \"title\",\n        value: title,\n        onChange: this.handleInputChange\n      })), React.createElement(\"label\", {\n        htmlFor: \"description\"\n      }, React.createElement(\"textarea\", {\n        value: description,\n        name: \"description\",\n        className: Styles.createDescription,\n        cols: \"30\",\n        rows: \"10\",\n        placeholder: \"description\",\n        onChange: this.handleInputChange\n      })), React.createElement(\"select\", {\n        className: \"create-priority\",\n        name: \"priority\",\n        value: priority,\n        onChange: this.handleInputChange\n      }, React.createElement(\"option\", {\n        value: \"high\"\n      }, \"high\"), React.createElement(\"option\", {\n        value: \"normal\"\n      }, \"normal\"), React.createElement(\"option\", {\n        value: \"low\"\n      }, \"low\")), React.createElement(\"div\", {\n        className: Styles.modalActions\n      }, React.createElement(\"div\", null, React.createElement(\"button\", {\n        className: \"button btn btn-dark cancel-todo\",\n        type: \"button\",\n        onClick: this.cancelTodo\n      }, \"Cancel\")), React.createElement(\"div\", null, saveButton ? React.createElement(\"button\", {\n        className: \"button btn btn-dark save-todo\",\n        type: \"button\",\n        onClick: this.createTodo\n      }, \"Save\") : React.createElement(\"button\", {\n        className: \"button btn btn-dark update-todo\",\n        type: \"button\",\n        onClick: this.updateTodo\n      }, \"Update\")))));\n    }\n  }]);\n\n  return Modal;\n}(Component);\n\nexport { Modal as default };\nModal.contextType = TodoContext;"
         },
         {
           "id": null,
@@ -13968,7 +13968,7 @@
               "moduleName": "./source/components/Modal/index.js",
               "type": "harmony import specifier",
               "userRequest": "../ThemeContext/ThemeContext",
-              "loc": "144:20-31"
+              "loc": "143:20-31"
             }
           ],
           "usedExports": [
@@ -15379,7 +15379,7 @@
       },
       "assets": [
         {
-          "name": "iconstats-7664e19f8707f0101a7a.json",
+          "name": "iconstats-5c6669f908d62d3148c4.json",
           "size": 7929,
           "chunks": [
             0
@@ -15839,7 +15839,7 @@
             0
           ],
           "assets": [
-            "iconstats-7664e19f8707f0101a7a.json"
+            "iconstats-5c6669f908d62d3148c4.json"
           ],
           "children": {
           },
@@ -15853,7 +15853,7 @@
             0
           ],
           "assets": [
-            "iconstats-7664e19f8707f0101a7a.json"
+            "iconstats-5c6669f908d62d3148c4.json"
           ],
           "children": {
           },
@@ -15871,9 +15871,9 @@
           "names": [
           ],
           "files": [
-            "iconstats-7664e19f8707f0101a7a.json"
+            "iconstats-5c6669f908d62d3148c4.json"
           ],
-          "hash": "21f92638e230acda1f1e",
+          "hash": "fbec89ce9a3dcad3f4de",
           "siblings": [
           ],
           "parents": [
@@ -15929,19 +15929,19 @@
                 "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon-16x16.png",
                 "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon-32x32.png",
                 "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon.ico",
-                "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81firefox_app_128x128.png",
                 "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81firefox_app_60x60.png",
+                "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81firefox_app_128x128.png",
                 "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81firefox_app_512x512.png",
                 "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-320x460.png",
-                "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-640x1096.png",
                 "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-640x920.png",
+                "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-640x1096.png",
                 "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-748x1024.png",
                 "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-750x1294.png",
                 "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-768x1004.png",
                 "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1182x2208.png",
                 "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1242x2148.png",
-                "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1536x2008.png",
                 "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1496x2048.png",
+                "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1536x2008.png",
                 "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81manifest.json",
                 "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81manifest.webapp",
                 "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81.cache"
@@ -15962,7 +15962,7 @@
                 "ModuleConcatenation bailout: Module is not an ECMAScript module"
               ],
               "depth": 0,
-              "source": "module.exports = {\"outputFilePrefix\":\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81\",\"html\":[\"<meta name=\\\"mobile-web-app-capable\\\" content=\\\"yes\\\">\",\"<meta name=\\\"theme-color\\\" content=\\\"#fff\\\">\",\"<meta name=\\\"application-name\\\" content=\\\"js-band-hw\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"57x57\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-57x57.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"60x60\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-60x60.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"72x72\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-72x72.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"76x76\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-76x76.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"114x114\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-114x114.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"120x120\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-120x120.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"144x144\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-144x144.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"152x152\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-152x152.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"180x180\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-180x180.png\\\">\",\"<meta name=\\\"apple-mobile-web-app-capable\\\" content=\\\"yes\\\">\",\"<meta name=\\\"apple-mobile-web-app-status-bar-style\\\" content=\\\"black-translucent\\\">\",\"<meta name=\\\"apple-mobile-web-app-title\\\" content=\\\"js-band-hw\\\">\",\"<link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"32x32\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon-32x32.png\\\">\",\"<link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"16x16\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon-16x16.png\\\">\",\"<link rel=\\\"shortcut icon\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon.ico\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-320x460.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-640x920.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-640x1096.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-750x1294.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1182x2208.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1242x2148.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-748x1024.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-768x1004.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1496x2048.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1536x2008.png\\\">\"],\"files\":[\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-36x36.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-48x48.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-72x72.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-96x96.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-144x144.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-192x192.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-256x256.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-384x384.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-512x512.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-57x57.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-60x60.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-72x72.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-76x76.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-114x114.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-120x120.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-144x144.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-152x152.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-167x167.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-180x180.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-precomposed.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon-16x16.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon-32x32.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon.ico\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81firefox_app_128x128.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81firefox_app_60x60.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81firefox_app_512x512.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-320x460.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-640x1096.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-640x920.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-748x1024.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-750x1294.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-768x1004.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1182x2208.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1242x2148.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1536x2008.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1496x2048.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81manifest.json\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81manifest.webapp\"]}"
+              "source": "module.exports = {\"outputFilePrefix\":\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81\",\"html\":[\"<meta name=\\\"mobile-web-app-capable\\\" content=\\\"yes\\\">\",\"<meta name=\\\"theme-color\\\" content=\\\"#fff\\\">\",\"<meta name=\\\"application-name\\\" content=\\\"js-band-hw\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"57x57\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-57x57.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"60x60\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-60x60.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"72x72\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-72x72.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"76x76\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-76x76.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"114x114\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-114x114.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"120x120\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-120x120.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"144x144\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-144x144.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"152x152\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-152x152.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"180x180\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-180x180.png\\\">\",\"<meta name=\\\"apple-mobile-web-app-capable\\\" content=\\\"yes\\\">\",\"<meta name=\\\"apple-mobile-web-app-status-bar-style\\\" content=\\\"black-translucent\\\">\",\"<meta name=\\\"apple-mobile-web-app-title\\\" content=\\\"js-band-hw\\\">\",\"<link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"32x32\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon-32x32.png\\\">\",\"<link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"16x16\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon-16x16.png\\\">\",\"<link rel=\\\"shortcut icon\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon.ico\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-320x460.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-640x920.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-640x1096.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-750x1294.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1182x2208.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1242x2148.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-748x1024.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-768x1004.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1496x2048.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1536x2008.png\\\">\"],\"files\":[\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-36x36.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-48x48.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-72x72.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-96x96.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-144x144.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-192x192.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-256x256.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-384x384.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-512x512.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-57x57.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-60x60.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-72x72.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-76x76.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-114x114.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-120x120.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-144x144.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-152x152.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-167x167.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-180x180.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-precomposed.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon-16x16.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon-32x32.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon.ico\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81firefox_app_60x60.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81firefox_app_128x128.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81firefox_app_512x512.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-320x460.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-640x920.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-640x1096.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-748x1024.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-750x1294.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-768x1004.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1182x2208.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1242x2148.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1496x2048.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1536x2008.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81manifest.json\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81manifest.webapp\"]}"
             }
           ],
           "filteredModules": 0,
@@ -16026,19 +16026,19 @@
             "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon-16x16.png",
             "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon-32x32.png",
             "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon.ico",
-            "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81firefox_app_128x128.png",
             "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81firefox_app_60x60.png",
+            "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81firefox_app_128x128.png",
             "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81firefox_app_512x512.png",
             "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-320x460.png",
-            "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-640x1096.png",
             "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-640x920.png",
+            "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-640x1096.png",
             "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-748x1024.png",
             "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-750x1294.png",
             "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-768x1004.png",
             "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1182x2208.png",
             "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1242x2148.png",
-            "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1536x2008.png",
             "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1496x2048.png",
+            "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1536x2008.png",
             "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81manifest.json",
             "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81manifest.webapp",
             "images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81.cache"
@@ -16059,7 +16059,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 0,
-          "source": "module.exports = {\"outputFilePrefix\":\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81\",\"html\":[\"<meta name=\\\"mobile-web-app-capable\\\" content=\\\"yes\\\">\",\"<meta name=\\\"theme-color\\\" content=\\\"#fff\\\">\",\"<meta name=\\\"application-name\\\" content=\\\"js-band-hw\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"57x57\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-57x57.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"60x60\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-60x60.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"72x72\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-72x72.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"76x76\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-76x76.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"114x114\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-114x114.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"120x120\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-120x120.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"144x144\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-144x144.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"152x152\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-152x152.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"180x180\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-180x180.png\\\">\",\"<meta name=\\\"apple-mobile-web-app-capable\\\" content=\\\"yes\\\">\",\"<meta name=\\\"apple-mobile-web-app-status-bar-style\\\" content=\\\"black-translucent\\\">\",\"<meta name=\\\"apple-mobile-web-app-title\\\" content=\\\"js-band-hw\\\">\",\"<link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"32x32\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon-32x32.png\\\">\",\"<link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"16x16\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon-16x16.png\\\">\",\"<link rel=\\\"shortcut icon\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon.ico\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-320x460.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-640x920.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-640x1096.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-750x1294.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1182x2208.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1242x2148.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-748x1024.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-768x1004.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1496x2048.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1536x2008.png\\\">\"],\"files\":[\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-36x36.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-48x48.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-72x72.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-96x96.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-144x144.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-192x192.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-256x256.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-384x384.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-512x512.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-57x57.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-60x60.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-72x72.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-76x76.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-114x114.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-120x120.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-144x144.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-152x152.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-167x167.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-180x180.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-precomposed.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon-16x16.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon-32x32.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon.ico\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81firefox_app_128x128.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81firefox_app_60x60.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81firefox_app_512x512.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-320x460.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-640x1096.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-640x920.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-748x1024.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-750x1294.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-768x1004.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1182x2208.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1242x2148.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1536x2008.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1496x2048.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81manifest.json\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81manifest.webapp\"]}"
+          "source": "module.exports = {\"outputFilePrefix\":\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81\",\"html\":[\"<meta name=\\\"mobile-web-app-capable\\\" content=\\\"yes\\\">\",\"<meta name=\\\"theme-color\\\" content=\\\"#fff\\\">\",\"<meta name=\\\"application-name\\\" content=\\\"js-band-hw\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"57x57\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-57x57.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"60x60\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-60x60.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"72x72\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-72x72.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"76x76\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-76x76.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"114x114\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-114x114.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"120x120\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-120x120.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"144x144\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-144x144.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"152x152\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-152x152.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"180x180\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-180x180.png\\\">\",\"<meta name=\\\"apple-mobile-web-app-capable\\\" content=\\\"yes\\\">\",\"<meta name=\\\"apple-mobile-web-app-status-bar-style\\\" content=\\\"black-translucent\\\">\",\"<meta name=\\\"apple-mobile-web-app-title\\\" content=\\\"js-band-hw\\\">\",\"<link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"32x32\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon-32x32.png\\\">\",\"<link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"16x16\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon-16x16.png\\\">\",\"<link rel=\\\"shortcut icon\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon.ico\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-320x460.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-640x920.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-640x1096.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-750x1294.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1182x2208.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1242x2148.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-748x1024.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-768x1004.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1496x2048.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"./images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1536x2008.png\\\">\"],\"files\":[\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-36x36.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-48x48.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-72x72.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-96x96.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-144x144.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-192x192.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-256x256.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-384x384.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81android-chrome-512x512.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-57x57.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-60x60.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-72x72.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-76x76.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-114x114.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-120x120.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-144x144.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-152x152.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-167x167.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-180x180.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-icon-precomposed.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon-16x16.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon-32x32.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81favicon.ico\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81firefox_app_60x60.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81firefox_app_128x128.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81firefox_app_512x512.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-320x460.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-640x920.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-640x1096.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-748x1024.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-750x1294.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-768x1004.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1182x2208.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1242x2148.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1496x2048.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81apple-touch-startup-image-1536x2008.png\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81manifest.json\",\"images/favicon/icon-b2dd9688e7ec4a486492f99d32169c81manifest.webapp\"]}"
         }
       ],
       "filteredModules": 0,

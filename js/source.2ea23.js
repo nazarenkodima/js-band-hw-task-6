@@ -3749,7 +3749,6 @@ function (_Component) {
         priority: priority
       });
       toggleModal();
-      return createTodo;
     } // updateTodo() {
     // const { updateTodo, toggleModal } = this.props;
     // console.log(this.context);
@@ -4847,4 +4846,4 @@ exports.isElement=function(a){return"object"===typeof a&&null!==a&&a.$$typeof===
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=source.8f631.js.map
+//# sourceMappingURL=source.2ea23.js.map
