@@ -68,6 +68,35 @@ export default class Todos extends Component {
     this.updateTasksFilter = this.updateTasksFilter.bind(this);
   }
 
+  filterTasks = todo => {
+
+    const { tasksFilter, done, priority } = this.state;
+
+    if (done) {
+    return todo.done === true;
+    }
+
+    if(!done && priority) {
+      switch (priority) {
+        case 'high':
+          return todo.priority === priority
+
+        case 'normal':
+          return todo
+
+        case 'low':
+          return todo.priority === priority;
+
+        default:
+          return  todo.priority === priority
+      }
+
+    }
+
+
+    return todo.title.toLowerCase().includes(tasksFilter);
+  };
+
   toggleModal() {
     const { isModalShown } = this.state;
 
@@ -119,10 +148,11 @@ export default class Todos extends Component {
     const { todos } = this.state;
 
     const newTodos = todos.map(todo => {
-      if (todo.id === id) {
-        todo.done = !todo.done;
+      const t = todo;
+      if (t.id === id) {
+        t.done = !t.done;
       }
-      return todo;
+      return t;
     });
 
     this.setState({
@@ -134,8 +164,9 @@ export default class Todos extends Component {
     const { todos } = this.state;
 
     const updatedTodos = todos.map(todo => {
-      if (todo.id === id) {
-        console.log(todo);
+      const t = todo;
+      if (t.id === id) {
+        console.log(t);
       }
       return todo;
     });
@@ -145,35 +176,6 @@ export default class Todos extends Component {
       saveButton: false
     });
   }
-
-  filterTasks = todo => {
-
-    const { tasksFilter, done, priority } = this.state;
-
-    if (done) {
-    return todo.done === true;
-    }
-
-    if(!done && priority) {
-      switch (priority) {
-        case 'high':
-          return todo.priority === priority
-
-        case 'normal':
-          return todo
-
-        case 'low':
-          return todo.priority === priority;
-
-        default:
-          return  todo.priority === priority
-      }
-
-    }
-
-
-    return todo.title.toLowerCase().includes(tasksFilter);
-  };
 
   updateTasksFilter(event) {
     this.setState({
