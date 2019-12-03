@@ -1,5 +1,6 @@
 // Core
 import React, { Component } from 'react';
+import { Spring } from 'react-spring';
 import { TodoProvider } from '../ThemeContext/ThemeContext';
 
 // Components
@@ -66,13 +67,11 @@ export default class Todos extends Component {
   filterTasks = todo => {
     const { tasksFilter, done, priority } = this.state;
 
-
     if (done && todo.priority === 'high') return todo.priority === priority && todo.done;
 
     if (done && todo.priority === 'normal') return todo.priority === priority && todo.done;
 
     if (done && todo.priority === 'low') return todo.priority === priority && todo.done;
-
 
     if (!done && priority) {
       switch (priority) {
@@ -89,7 +88,6 @@ export default class Todos extends Component {
           return todo;
       }
     }
-
 
     return todo.title.toLowerCase().includes(tasksFilter);
   };
@@ -176,7 +174,7 @@ export default class Todos extends Component {
 
     const { done } = this.state;
 
-    if(name === 'priority') {
+    if (name === 'priority') {
       this.setState({
         [name]: value,
         priority: value,
@@ -186,10 +184,9 @@ export default class Todos extends Component {
     if (name === 'done') {
       this.setState({
         [name]: value,
-        done: !done
+        done: !done,
       });
     }
-
   }
 
   render() {
@@ -263,7 +260,20 @@ export default class Todos extends Component {
               </div>
             </section>
             <section className={Styles.todos}>
-              <ul className={Styles.grid}>{todoJSX}</ul>
+              <Spring
+                from={{
+                  opacity: 0,
+                  transform: 'translate3d(0,400px,0) scale(2) rotateX(90deg)',
+                }}
+                to={{ opacity: 1, transform: 'translate3d(0,0px,0) scale(1) rotateX(0deg)' }}
+              >
+                {props => (
+                  <ul style={props} className={Styles.grid}>
+                    {' '}
+                    {todoJSX}{' '}
+                  </ul>
+                )}
+              </Spring>
             </section>
           </div>
           <div

@@ -43,7 +43,7 @@ export default class Todo extends PureComponent {
         <div className={Styles.todoItem__footer}>
           <div className={Styles.priorityBox}>{priority}</div>
           <div className={Styles.actionBox}>
-            <div className={Styles.actionBox__menu} >...</div>
+            <div className={Styles.actionBox__menu}>...</div>
             <div className={Styles.actions}>
               <button className="button btn btn-dark" type="button" onClick={this.todoDone}>
                 done
