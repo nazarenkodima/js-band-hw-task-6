@@ -11,7 +11,7 @@ script:
   - npm run code:clean
   - npm run build:prod
 deploy:
-  provider: navigation
+  provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: build
