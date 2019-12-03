@@ -112,6 +112,18 @@ module.exports = _assertThisInitialized;
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports) {
+
+function _newArrowCheck(innerThis, boundThis) {
+  if (innerThis !== boundThis) {
+    throw new TypeError("Cannot instantiate an arrow function");
+  }
+}
+
+module.exports = _newArrowCheck;
+
+/***/ }),
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -133,18 +145,6 @@ function _extends() {
 
   return _extends.apply(this, arguments);
 }
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
-function _newArrowCheck(innerThis, boundThis) {
-  if (innerThis !== boundThis) {
-    throw new TypeError("Cannot instantiate an arrow function");
-  }
-}
-
-module.exports = _newArrowCheck;
 
 /***/ }),
 /* 4 */
@@ -175,7 +175,7 @@ function invariant(condition, message) {
 "use strict";
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js
-var inheritsLoose = __webpack_require__(7);
+var inheritsLoose = __webpack_require__(8);
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(0);
@@ -189,7 +189,7 @@ var prop_types_default = /*#__PURE__*/__webpack_require__.n(prop_types);
 var esm_history = __webpack_require__(6);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/inheritsLoose.js
-var helpers_inheritsLoose = __webpack_require__(22);
+var helpers_inheritsLoose = __webpack_require__(21);
 var inheritsLoose_default = /*#__PURE__*/__webpack_require__.n(helpers_inheritsLoose);
 
 // EXTERNAL MODULE: ./node_modules/gud/index.js
@@ -375,14 +375,14 @@ var index = react_default.a.createContext || createReactContext;
 var tiny_invariant_esm = __webpack_require__(4);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
-var esm_extends = __webpack_require__(2);
+var esm_extends = __webpack_require__(3);
 
 // EXTERNAL MODULE: ./node_modules/react-router/node_modules/path-to-regexp/index.js
-var path_to_regexp = __webpack_require__(23);
+var path_to_regexp = __webpack_require__(22);
 var path_to_regexp_default = /*#__PURE__*/__webpack_require__.n(path_to_regexp);
 
 // EXTERNAL MODULE: ./node_modules/react-is/index.js
-var react_is = __webpack_require__(26);
+var react_is = __webpack_require__(25);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
 var objectWithoutPropertiesLoose = __webpack_require__(15);
@@ -1058,7 +1058,7 @@ if (false) { var secondaryBuildName, initialBuildName, buildNames, key, global; 
 "use strict";
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
-var esm_extends = __webpack_require__(2);
+var esm_extends = __webpack_require__(3);
 
 // CONCATENATED MODULE: ./node_modules/resolve-pathname/esm/resolve-pathname.js
 function isAbsolute(pathname) {
@@ -2109,18 +2109,6 @@ function createMemoryHistory(props) {
 
 /***/ }),
 /* 7 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _inheritsLoose; });
-function _inheritsLoose(subClass, superClass) {
-  subClass.prototype = Object.create(superClass.prototype);
-  subClass.prototype.constructor = subClass;
-  subClass.__proto__ = superClass;
-}
-
-/***/ }),
-/* 8 */
 /***/ (function(module, exports) {
 
 function _defineProperty(obj, key, value) {
@@ -2139,6 +2127,18 @@ function _defineProperty(obj, key, value) {
 }
 
 module.exports = _defineProperty;
+
+/***/ }),
+/* 8 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _inheritsLoose; });
+function _inheritsLoose(subClass, superClass) {
+  subClass.prototype = Object.create(superClass.prototype);
+  subClass.prototype.constructor = subClass;
+  subClass.__proto__ = superClass;
+}
 
 /***/ }),
 /* 9 */
@@ -2299,13 +2299,13 @@ module.exports = {"todos":"styles-m__todos---3Ft-U","toolbar":"styles-m__toolbar
 /* unused harmony export Link */
 /* unused harmony export NavLink */
 /* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5);
-/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7);
+/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var history__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(16);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2);
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(3);
 /* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(15);
 /* harmony import */ var tiny_invariant__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(4);
 
@@ -2572,22 +2572,6 @@ if (false) { var ariaCurrentType; }
 
 /***/ }),
 /* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayWithoutHoles = __webpack_require__(46);
-
-var iterableToArray = __webpack_require__(47);
-
-var nonIterableSpread = __webpack_require__(48);
-
-function _toConsumableArray(arr) {
-  return arrayWithoutHoles(arr) || iterableToArray(arr) || nonIterableSpread();
-}
-
-module.exports = _toConsumableArray;
-
-/***/ }),
-/* 22 */
 /***/ (function(module, exports) {
 
 function _inheritsLoose(subClass, superClass) {
@@ -2599,7 +2583,7 @@ function _inheritsLoose(subClass, superClass) {
 module.exports = _inheritsLoose;
 
 /***/ }),
-/* 23 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isarray = __webpack_require__(51)
@@ -3031,7 +3015,7 @@ function pathToRegexp (path, keys, options) {
 
 
 /***/ }),
-/* 24 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3128,7 +3112,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 /***/ }),
-/* 25 */
+/* 24 */
 /***/ (function(module, exports) {
 
 var g;
@@ -3154,7 +3138,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 26 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3166,7 +3150,7 @@ if (true) {
 
 
 /***/ }),
-/* 27 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3200,7 +3184,7 @@ if (true) {
 
 
 /***/ }),
-/* 28 */
+/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3218,7 +3202,7 @@ if (true) {
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5);
-/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(29);
+/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(28);
 /* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_hot_loader__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _pages_Scheduler__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(35);
 
@@ -3266,7 +3250,7 @@ function (_Component) {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(42)(module)))
 
 /***/ }),
-/* 29 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3289,11 +3273,27 @@ if (true) {
 
 
 /***/ }),
-/* 30 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
 module.exports = {"header":"Styles-m__header---2eDfj"};
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayWithoutHoles = __webpack_require__(46);
+
+var iterableToArray = __webpack_require__(47);
+
+var nonIterableSpread = __webpack_require__(48);
+
+function _toConsumableArray(arr) {
+  return arrayWithoutHoles(arr) || iterableToArray(arr) || nonIterableSpread();
+}
+
+module.exports = _toConsumableArray;
 
 /***/ }),
 /* 31 */
@@ -3373,7 +3373,7 @@ module.exports = function() {
   return global[key] = (global[key] || 0) + 1;
 };
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(25)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(24)))
 
 /***/ }),
 /* 34 */
@@ -3382,7 +3382,7 @@ module.exports = function() {
 "use strict";
 
 
-var reactIs = __webpack_require__(26);
+var reactIs = __webpack_require__(25);
 
 /**
  * Copyright 2015, Yahoo! Inc.
@@ -3489,7 +3489,7 @@ module.exports = hoistNonReactStatics;
 "use strict";
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/newArrowCheck.js
-var newArrowCheck = __webpack_require__(3);
+var newArrowCheck = __webpack_require__(2);
 var newArrowCheck_default = /*#__PURE__*/__webpack_require__.n(newArrowCheck);
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
@@ -3497,7 +3497,7 @@ var react = __webpack_require__(0);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./source/components/Header/Styles.m.css
-var Styles_m = __webpack_require__(30);
+var Styles_m = __webpack_require__(29);
 var Styles_m_default = /*#__PURE__*/__webpack_require__.n(Styles_m);
 
 // CONCATENATED MODULE: ./source/components/Header/index.js
@@ -3520,7 +3520,7 @@ var Header_Header = function Header() {
 
 /* harmony default export */ var components_Header = (Header_Header);
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/toConsumableArray.js
-var toConsumableArray = __webpack_require__(21);
+var toConsumableArray = __webpack_require__(30);
 var toConsumableArray_default = /*#__PURE__*/__webpack_require__.n(toConsumableArray);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/classCallCheck.js
@@ -3548,12 +3548,8 @@ var inherits = __webpack_require__(14);
 var inherits_default = /*#__PURE__*/__webpack_require__.n(inherits);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/defineProperty.js
-var defineProperty = __webpack_require__(8);
+var defineProperty = __webpack_require__(7);
 var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty);
-
-// EXTERNAL MODULE: ./node_modules/classnames/index.js
-var classnames = __webpack_require__(31);
-var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
 
 // CONCATENATED MODULE: ./source/components/ThemeContext/ThemeContext.js
 
@@ -3561,6 +3557,10 @@ var TodoContext = react_default.a.createContext({});
 var TodoProvider = TodoContext.Provider;
 var TodoConsumer = TodoContext.Consumer;
 /* harmony default export */ var ThemeContext = (TodoContext);
+// EXTERNAL MODULE: ./node_modules/classnames/index.js
+var classnames = __webpack_require__(31);
+var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
+
 // EXTERNAL MODULE: ./source/components/Todo/Styles.m.css
 var Todo_Styles_m = __webpack_require__(9);
 var Todo_Styles_m_default = /*#__PURE__*/__webpack_require__.n(Todo_Styles_m);
@@ -3575,7 +3575,6 @@ var Todo_Styles_m_default = /*#__PURE__*/__webpack_require__.n(Todo_Styles_m);
 
 // Core
 
-
  // Styles
 
 
@@ -3585,12 +3584,12 @@ var Todo_Todo =
 function (_PureComponent) {
   inherits_default()(Todo, _PureComponent);
 
-  function Todo() {
+  function Todo(props) {
     var _this;
 
     classCallCheck_default()(this, Todo);
 
-    _this = possibleConstructorReturn_default()(this, getPrototypeOf_default()(Todo).call(this));
+    _this = possibleConstructorReturn_default()(this, getPrototypeOf_default()(Todo).call(this, props));
     _this.deleteTodo = _this.deleteTodo.bind(assertThisInitialized_default()(_this));
     _this.editTodo = _this.editTodo.bind(assertThisInitialized_default()(_this));
     _this.todoDone = _this.todoDone.bind(assertThisInitialized_default()(_this));
@@ -3615,16 +3614,13 @@ function (_PureComponent) {
     }
   }, {
     key: "editTodo",
-    value: function editTodo(event) {
-      console.log(event.target.dataset);
+    value: function editTodo() {
       var _this$props3 = this.props,
           toggleModal = _this$props3.toggleModal,
           id = _this$props3.id,
-          title = _this$props3.title,
-          description = _this$props3.description,
-          priority = _this$props3.priority;
-      console.log(id, title, description, priority);
-      toggleModal();
+          editTodo = _this$props3.editTodo;
+      toggleModal(id);
+      editTodo();
     }
   }, {
     key: "render",
@@ -3633,13 +3629,8 @@ function (_PureComponent) {
           title = _this$props4.title,
           description = _this$props4.description,
           priority = _this$props4.priority,
-          id = _this$props4.id,
           done = _this$props4.done;
-      return react_default.a.createElement(TodoProvider, {
-        value: {
-          id: id
-        }
-      }, react_default.a.createElement("li", {
+      return react_default.a.createElement("li", {
         className: classnames_default()(Todo_Styles_m_default.a.todoItem, defineProperty_default()({}, Todo_Styles_m_default.a.completed, done))
       }, react_default.a.createElement("h4", {
         className: "title"
@@ -3660,16 +3651,14 @@ function (_PureComponent) {
         type: "button",
         onClick: this.todoDone
       }, "done"), react_default.a.createElement("button", {
-        id: "editButton",
         className: "button btn btn-dark",
         type: "button",
-        "data-id": id,
         onClick: this.editTodo
       }, "edit"), react_default.a.createElement("button", {
         className: "button btn btn-dark",
         type: "button",
         onClick: this.deleteTodo
-      }, "delete"))))));
+      }, "delete")))));
     }
   }]);
 
@@ -3689,6 +3678,7 @@ var styles_m_default = /*#__PURE__*/__webpack_require__.n(styles_m);
 
 
 
+
 // Core
 
  // Instruments
@@ -3700,25 +3690,57 @@ var Modal_Modal =
 function (_Component) {
   inherits_default()(Modal, _Component);
 
-  function Modal() {
+  // eslint-disable-next-line react/sort-comp,react/static-property-placement
+  function Modal(props) {
     var _this;
 
     classCallCheck_default()(this, Modal);
 
-    _this = possibleConstructorReturn_default()(this, getPrototypeOf_default()(Modal).call(this));
+    _this = possibleConstructorReturn_default()(this, getPrototypeOf_default()(Modal).call(this, props));
     _this.state = {
       title: '',
       description: '',
-      priority: 'normal'
+      priority: 'normal',
+      done: false
     };
     _this.handleInputChange = _this.handleInputChange.bind(assertThisInitialized_default()(_this));
     _this.createTodo = _this.createTodo.bind(assertThisInitialized_default()(_this));
-    _this.cancelTodo = _this.cancelTodo.bind(assertThisInitialized_default()(_this)); // this.updateTodo = this.updateTodo.bind(this);
-
+    _this.cancelTodo = _this.cancelTodo.bind(assertThisInitialized_default()(_this));
+    _this.updateTodo = _this.updateTodo.bind(assertThisInitialized_default()(_this));
+    _this.fillTodo = _this.fillTodo.bind(assertThisInitialized_default()(_this));
     return _this;
   }
 
   createClass_default()(Modal, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.fillTodo();
+    }
+  }, {
+    key: "fillTodo",
+    value: function fillTodo() {
+      var _this2 = this;
+
+      var todos = this.context.todos;
+      var currentTodoId = this.props.currentTodoId;
+      todos.map(function (todo) {
+        newArrowCheck_default()(this, _this2);
+
+        var t = todo;
+
+        if (t.id === currentTodoId) {
+          this.setState({
+            title: t.title,
+            description: t.description,
+            priority: t.priority,
+            done: t.done
+          });
+        }
+
+        return todo;
+      }.bind(this));
+    }
+  }, {
     key: "handleInputChange",
     value: function handleInputChange(event) {
       var target = event.target;
@@ -3735,7 +3757,8 @@ function (_Component) {
       var _this$state = this.state,
           title = _this$state.title,
           description = _this$state.description,
-          priority = _this$state.priority;
+          priority = _this$state.priority,
+          done = _this$state.done;
 
       if (!title.trim()) {
         return null;
@@ -3745,15 +3768,41 @@ function (_Component) {
         id: Date.now().toString(),
         title: title,
         description: description,
-        done: false,
+        done: done,
         priority: priority
       });
       toggleModal();
-    } // updateTodo() {
-    // const { updateTodo, toggleModal } = this.props;
-    // console.log(this.context);
-    // }
+    }
+  }, {
+    key: "updateTodo",
+    value: function updateTodo() {
+      var _this3 = this;
 
+      var _this$props2 = this.props,
+          updateTodo = _this$props2.updateTodo,
+          currentTodoId = _this$props2.currentTodoId,
+          toggleModal = _this$props2.toggleModal;
+      var _this$state2 = this.state,
+          title = _this$state2.title,
+          description = _this$state2.description,
+          priority = _this$state2.priority;
+      var todos = this.context.todos;
+      todos.map(function (todo) {
+        newArrowCheck_default()(this, _this3);
+
+        var t = todo;
+
+        if (todo.id === currentTodoId) {
+          t.title = title;
+          t.description = description;
+          t.priority = priority;
+        }
+
+        return t;
+      }.bind(this));
+      updateTodo(todos);
+      toggleModal();
+    }
   }, {
     key: "cancelTodo",
     value: function cancelTodo() {
@@ -3763,13 +3812,11 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this$state2 = this.state,
-          title = _this$state2.title,
-          description = _this$state2.description,
-          priority = _this$state2.priority;
-      var saveButton = this.props.saveButton;
-      console.log('savebutton', saveButton); // const { save } = this.context;
-
+      var _this$state3 = this.state,
+          title = _this$state3.title,
+          description = _this$state3.description,
+          priority = _this$state3.priority;
+      var showSaveButton = this.props.showSaveButton;
       return react_default.a.createElement(react_default.a.Fragment, null, react_default.a.createElement("div", {
         className: styles_m_default.a.todoModal
       }, react_default.a.createElement("label", {
@@ -3808,7 +3855,7 @@ function (_Component) {
         className: "button btn btn-dark cancel-todo",
         type: "button",
         onClick: this.cancelTodo
-      }, "Cancel")), react_default.a.createElement("div", null, saveButton ? react_default.a.createElement("button", {
+      }, "Cancel")), react_default.a.createElement("div", null, showSaveButton ? react_default.a.createElement("button", {
         className: "button btn btn-dark save-todo",
         type: "button",
         onClick: this.createTodo
@@ -3823,8 +3870,9 @@ function (_Component) {
   return Modal;
 }(react["Component"]);
 
+defineProperty_default()(Modal_Modal, "contextType", ThemeContext);
 
-Modal_Modal.contextType = ThemeContext;
+
 // EXTERNAL MODULE: ./source/components/Todos/styles.m.css
 var Todos_styles_m = __webpack_require__(18);
 var Todos_styles_m_default = /*#__PURE__*/__webpack_require__.n(Todos_styles_m);
@@ -3840,6 +3888,7 @@ var Todos_styles_m_default = /*#__PURE__*/__webpack_require__.n(Todos_styles_m);
 
 
 // Core
+
  // Components
 
 
@@ -3893,42 +3942,37 @@ function (_Component) {
     }.bind(this));
 
     _this.state = {
-      tasksFilter: '',
-      saveButton: true,
-      isModalShown: false,
       todos: [{
-        id: '3',
-        title: 'Hello world 101',
-        description: 'normal todo',
+        id: '1',
+        title: 'Finish todo task',
+        description: 'Ciklum internship',
         done: true,
-        priority: 'normal'
+        priority: 'high'
       }, {
         id: '2',
         title: 'Master JS and React',
         description: 'finish Udemy courses',
-        done: true,
+        done: false,
         priority: 'normal'
       }, {
-        id: '6',
-        title: '1',
-        description: 'finish Udemy courses',
+        id: '3',
+        title: 'Hello world 101',
+        description: 'normal todo',
         done: false,
-        priority: 'low'
-      }, {
-        id: '41',
-        title: '2',
-        description: 'finish Udemy courses',
-        done: true,
-        priority: 'low'
+        priority: 'normal'
       }, {
         id: '4',
-        title: '3',
-        description: 'finish Udemy courses',
-        done: true,
+        title: 'Hello world',
+        description: 'low priority todo',
+        done: false,
         priority: 'low'
       }],
       done: false,
-      priority: ''
+      priority: '',
+      currentTodoId: undefined,
+      tasksFilter: '',
+      showSaveButton: true,
+      isModalShown: false
     };
     _this.toggleModal = _this.toggleModal.bind(assertThisInitialized_default()(_this));
     _this.handleOutsideClick = _this.handleOutsideClick.bind(assertThisInitialized_default()(_this));
@@ -3944,7 +3988,7 @@ function (_Component) {
 
   createClass_default()(Todos, [{
     key: "toggleModal",
-    value: function toggleModal() {
+    value: function toggleModal(id) {
       var _this3 = this;
 
       var isModalShown = this.state.isModalShown;
@@ -3959,7 +4003,9 @@ function (_Component) {
         newArrowCheck_default()(this, _this3);
 
         return {
-          isModalShown: !prevState.isModalShown
+          isModalShown: !prevState.isModalShown,
+          currentTodoId: id,
+          showSaveButton: true
         };
       }.bind(this));
     }
@@ -3983,34 +4029,25 @@ function (_Component) {
         newArrowCheck_default()(this, _this4);
 
         return {
-          todos: [todo].concat(toConsumableArray_default()(todos)),
-          saveButton: true
-        };
-      }.bind(this));
-    }
-  }, {
-    key: "updateTodo",
-    value: function updateTodo(todo) {
-      var _this5 = this;
-
-      this.setState(function (_ref2) {
-        var todos = _ref2.todos;
-
-        newArrowCheck_default()(this, _this5);
-
-        return {
           todos: [todo].concat(toConsumableArray_default()(todos))
         };
       }.bind(this));
     }
   }, {
+    key: "updateTodo",
+    value: function updateTodo(todos) {
+      this.setState({
+        todos: todos
+      });
+    }
+  }, {
     key: "deleteTodo",
     value: function deleteTodo(id) {
-      var _this6 = this;
+      var _this5 = this;
 
       var todos = this.state.todos;
       var newTodos = todos.filter(function (todo) {
-        newArrowCheck_default()(this, _this6);
+        newArrowCheck_default()(this, _this5);
 
         return todo.id !== id;
       }.bind(this));
@@ -4021,11 +4058,11 @@ function (_Component) {
   }, {
     key: "todoDone",
     value: function todoDone(id) {
-      var _this7 = this;
+      var _this6 = this;
 
       var todos = this.state.todos;
       var newTodos = todos.map(function (todo) {
-        newArrowCheck_default()(this, _this7);
+        newArrowCheck_default()(this, _this6);
 
         var t = todo;
 
@@ -4041,25 +4078,16 @@ function (_Component) {
     }
   }, {
     key: "editTodo",
-    value: function editTodo(id) {
-      var _this8 = this;
+    value: function editTodo() {
+      var _this7 = this;
 
-      var todos = this.state.todos;
-      var updatedTodos = todos.map(function (todo) {
-        newArrowCheck_default()(this, _this8);
+      this.setState(function () {
+        newArrowCheck_default()(this, _this7);
 
-        var t = todo;
-
-        if (t.id === id) {
-          console.log(t);
-        }
-
-        return todo;
+        return {
+          showSaveButton: false
+        };
       }.bind(this));
-      this.setState({
-        todos: updatedTodos,
-        saveButton: false
-      });
     }
   }, {
     key: "updateTasksFilter",
@@ -4077,9 +4105,9 @@ function (_Component) {
       var value = target.value;
       var name = target.name;
       var done = this.state.done;
-      this.setState((_this$setState = {}, defineProperty_default()(_this$setState, name, value), defineProperty_default()(_this$setState, "priority", name === 'priority' ? value : ''), defineProperty_default()(_this$setState, "done", !done), _this$setState));
-      console.log('NAME:', event.target.name);
-      console.log('VALUE:', event.target.value); // if(name === 'priority') {
+      this.setState((_this$setState = {}, defineProperty_default()(_this$setState, name, value), defineProperty_default()(_this$setState, "priority", name === 'priority' ? value : ''), defineProperty_default()(_this$setState, "done", !done), _this$setState)); // console.log('NAME:',event.target.name)
+      // console.log('VALUE:',event.target.value)
+      // if(name === 'priority') {
       //   this.setState({
       //     [name]: value,
       //     priority: value,
@@ -4098,26 +4126,27 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this9 = this;
+      var _this8 = this;
 
       var _this$state2 = this.state,
           todos = _this$state2.todos,
           isModalShown = _this$state2.isModalShown,
-          saveButton = _this$state2.saveButton,
-          tasksFilter = _this$state2.tasksFilter;
+          showSaveButton = _this$state2.showSaveButton,
+          tasksFilter = _this$state2.tasksFilter,
+          currentTodoId = _this$state2.currentTodoId;
 
       var completed = function completed(a, b) {
-        newArrowCheck_default()(this, _this9);
+        newArrowCheck_default()(this, _this8);
 
         return (a > b) - (a < b);
       }.bind(this);
 
       var todoJSX = todos.sort(function (a, b) {
-        newArrowCheck_default()(this, _this9);
+        newArrowCheck_default()(this, _this8);
 
         return completed(a.done, b.done);
       }.bind(this)).filter(this.filterTasks).map(function (todo) {
-        newArrowCheck_default()(this, _this9);
+        newArrowCheck_default()(this, _this8);
 
         return react_default.a.createElement(Todo_Todo, {
           key: todo.id,
@@ -4128,10 +4157,15 @@ function (_Component) {
           priority: todo.priority,
           deleteTodo: this.deleteTodo,
           todoDone: this.todoDone,
-          toggleModal: this.toggleModal
+          toggleModal: this.toggleModal,
+          editTodo: this.editTodo
         });
       }.bind(this));
-      return react_default.a.createElement("main", null, react_default.a.createElement("div", {
+      return react_default.a.createElement(TodoProvider, {
+        value: {
+          todos: todos
+        }
+      }, react_default.a.createElement("main", null, react_default.a.createElement("div", {
         className: "container"
       }, react_default.a.createElement("section", {
         className: Todos_styles_m_default.a.toolbar
@@ -4171,19 +4205,19 @@ function (_Component) {
         className: Todos_styles_m_default.a.grid
       }, todoJSX))), react_default.a.createElement("div", {
         ref: function (node) {
-          newArrowCheck_default()(this, _this9);
+          newArrowCheck_default()(this, _this8);
 
           this.node = node;
         }.bind(this)
       }, isModalShown && react_default.a.createElement(Modal_Modal, {
         createTodo: this.createTodo,
-        editTodo: this.editTodo,
         updateTodo: this.updateTodo,
         toggleModal: this.toggleModal,
-        saveButton: saveButton
+        showSaveButton: showSaveButton,
+        currentTodoId: currentTodoId
       }), isModalShown && react_default.a.createElement("div", {
         className: Todos_styles_m_default.a.modalWrapper
-      })));
+      }))));
     }
   }]);
 
@@ -4242,12 +4276,12 @@ var Scheduler_Scheduler = function Scheduler() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(27);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(26);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(20);
 /* harmony import */ var _theme_init_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(41);
 /* harmony import */ var _theme_init_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_theme_init_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _navigation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(28);
+/* harmony import */ var _navigation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(27);
 // Core
 
 
@@ -4272,7 +4306,7 @@ Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["render"])(react__WEBPACK_IMPORTED
  * LICENSE file in the root directory of this source tree.
  */
 
-var k=__webpack_require__(24),n="function"===typeof Symbol&&Symbol.for,p=n?Symbol.for("react.element"):60103,q=n?Symbol.for("react.portal"):60106,r=n?Symbol.for("react.fragment"):60107,t=n?Symbol.for("react.strict_mode"):60108,u=n?Symbol.for("react.profiler"):60114,v=n?Symbol.for("react.provider"):60109,w=n?Symbol.for("react.context"):60110,x=n?Symbol.for("react.concurrent_mode"):60111,y=n?Symbol.for("react.forward_ref"):60112,z=n?Symbol.for("react.suspense"):60113,aa=n?Symbol.for("react.memo"):
+var k=__webpack_require__(23),n="function"===typeof Symbol&&Symbol.for,p=n?Symbol.for("react.element"):60103,q=n?Symbol.for("react.portal"):60106,r=n?Symbol.for("react.fragment"):60107,t=n?Symbol.for("react.strict_mode"):60108,u=n?Symbol.for("react.profiler"):60114,v=n?Symbol.for("react.provider"):60109,w=n?Symbol.for("react.context"):60110,x=n?Symbol.for("react.concurrent_mode"):60111,y=n?Symbol.for("react.forward_ref"):60112,z=n?Symbol.for("react.suspense"):60113,aa=n?Symbol.for("react.memo"):
 60115,ba=n?Symbol.for("react.lazy"):60116,A="function"===typeof Symbol&&Symbol.iterator;function ca(a,b,d,c,e,g,h,f){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var l=[d,c,e,g,h,f],m=0;a=Error(b.replace(/%s/g,function(){return l[m++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
 function B(a){for(var b=arguments.length-1,d="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=0;c<b;c++)d+="&args[]="+encodeURIComponent(arguments[c+1]);ca(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",d)}var C={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}},D={};
 function E(a,b,d){this.props=a;this.context=b;this.refs=D;this.updater=d||C}E.prototype.isReactComponent={};E.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?B("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};E.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};function F(){}F.prototype=E.prototype;function G(a,b,d){this.props=a;this.context=b;this.refs=D;this.updater=d||C}var H=G.prototype=new F;
@@ -4307,7 +4341,7 @@ unstable_ConcurrentMode:x,unstable_Profiler:u,__SECRET_INTERNALS_DO_NOT_USE_OR_Y
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(0),p=__webpack_require__(24),ba=__webpack_require__(39);function ca(a,b,c,d,e,f,g,h){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var l=[c,d,e,f,g,h],k=0;a=Error(b.replace(/%s/g,function(){return l[k++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
+var aa=__webpack_require__(0),p=__webpack_require__(23),ba=__webpack_require__(39);function ca(a,b,c,d,e,f,g,h){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var l=[c,d,e,f,g,h],k=0;a=Error(b.replace(/%s/g,function(){return l[k++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
 function t(a){for(var b=arguments.length-1,c="https://reactjs.org/docs/error-decoder.html?invariant="+a,d=0;d<b;d++)c+="&args[]="+encodeURIComponent(arguments[d+1]);ca(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",c)}aa?void 0:t("227");function da(a,b,c,d,e,f,g,h,l){var k=Array.prototype.slice.call(arguments,3);try{b.apply(c,k)}catch(m){this.onError(m)}}
 var ea=!1,fa=null,ha=!1,ia=null,ja={onError:function(a){ea=!0;fa=a}};function ka(a,b,c,d,e,f,g,h,l){ea=!1;fa=null;da.apply(ja,arguments)}function la(a,b,c,d,e,f,g,h,l){ka.apply(this,arguments);if(ea){if(ea){var k=fa;ea=!1;fa=null}else t("198"),k=void 0;ha||(ha=!0,ia=k)}}var ma=null,na={};
 function oa(){if(ma)for(var a in na){var b=na[a],c=ma.indexOf(a);-1<c?void 0:t("96",a);if(!pa[c]){b.extractEvents?void 0:t("97",a);pa[c]=b;c=b.eventTypes;for(var d in c){var e=void 0;var f=c[d],g=b,h=d;ra.hasOwnProperty(h)?t("99",h):void 0;ra[h]=f;var l=f.phasedRegistrationNames;if(l){for(e in l)l.hasOwnProperty(e)&&sa(l[e],g,h);e=!0}else f.registrationName?(sa(f.registrationName,g,h),e=!0):e=!1;e?void 0:t("98",d,a)}}}}
@@ -4604,7 +4638,7 @@ exports.unstable_scheduleCallback=function(a,b){var c=-1!==k?k:exports.unstable_
 b=c.previous;b.next=c.previous=a;a.next=c;a.previous=b}return a};exports.unstable_cancelCallback=function(a){var b=a.next;if(null!==b){if(b===a)d=null;else{a===d&&(d=b);var c=a.previous;c.next=b;b.previous=c}a.next=a.previous=null}};exports.unstable_wrapCallback=function(a){var b=g;return function(){var c=g,f=k;g=b;k=exports.unstable_now();try{return a.apply(this,arguments)}finally{g=c,k=f,v()}}};exports.unstable_getCurrentPriorityLevel=function(){return g};
 exports.unstable_shouldYield=function(){return!e&&(null!==d&&d.expirationTime<l||w())};exports.unstable_continueExecution=function(){null!==d&&p()};exports.unstable_pauseExecution=function(){};exports.unstable_getFirstCallbackNode=function(){return d};
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(25)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(24)))
 
 /***/ }),
 /* 41 */
@@ -4846,4 +4880,4 @@ exports.isElement=function(a){return"object"===typeof a&&null!==a&&a.$$typeof===
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=source.2ea23.js.map
+//# sourceMappingURL=source.fa852.js.map
