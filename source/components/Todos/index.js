@@ -13,13 +13,13 @@ export default class Todos extends Component {
 
   render() {
     return (
-        <>
-            <div className="container">
-              <section className={Styles.todos}>
-                <h1>todos</h1>
-              </section>
-            </div>
-        </>
+      <>
+        <div className="container">
+          <section className={Styles.todos}>
+            <h1>todos</h1>
+          </section>
+        </div>
+      </>
     );
   }
 }

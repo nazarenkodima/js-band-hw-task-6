@@ -7,7 +7,7 @@ import { HashRouter as Router } from 'react-router-dom';
 import './theme/init.css';
 
 // Index
-import Index from './navigation';
+import App from './navigation';
 
 render(
   <Router>
