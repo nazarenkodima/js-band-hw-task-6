@@ -1,7 +1,7 @@
 // Core
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 
 // Styles
 import './theme/init.css';
@@ -10,8 +10,8 @@ import './theme/init.css';
 import App from './pages/App';
 
 render(
-  <BrowserRouter>
+  <Router>
     <App />
-  </BrowserRouter>,
+  </Router>,
   document.getElementById('app'),
 );
