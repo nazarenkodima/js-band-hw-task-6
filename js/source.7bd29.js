@@ -203,6 +203,27 @@ function invariant(condition, message) {
 
 /***/ }),
 /* 7 */
+/***/ (function(module, exports) {
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+module.exports = _defineProperty;
+
+/***/ }),
+/* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -219,7 +240,7 @@ var prop_types = __webpack_require__(16);
 var prop_types_default = /*#__PURE__*/__webpack_require__.n(prop_types);
 
 // EXTERNAL MODULE: ./node_modules/history/esm/history.js + 2 modules
-var esm_history = __webpack_require__(8);
+var esm_history = __webpack_require__(9);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/inheritsLoose.js
 var helpers_inheritsLoose = __webpack_require__(22);
@@ -1085,7 +1106,7 @@ if (false) { var secondaryBuildName, initialBuildName, buildNames, key, global; 
 
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2141,27 +2162,6 @@ function createMemoryHistory(props) {
 
 
 /***/ }),
-/* 9 */
-/***/ (function(module, exports) {
-
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
-module.exports = _defineProperty;
-
-/***/ }),
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2332,11 +2332,11 @@ if (true) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HashRouter; });
 /* unused harmony export Link */
 /* unused harmony export NavLink */
-/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
+/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8);
 /* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var history__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8);
+/* harmony import */ var history__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(16);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(1);
@@ -3201,7 +3201,7 @@ if (true) {
 /* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(7);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(8);
 /* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(28);
 /* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_hot_loader__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _pages_Scheduler__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(35);
@@ -3548,7 +3548,7 @@ var inherits = __webpack_require__(15);
 var inherits_default = /*#__PURE__*/__webpack_require__.n(inherits);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/defineProperty.js
-var defineProperty = __webpack_require__(9);
+var defineProperty = __webpack_require__(7);
 var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js
@@ -6352,7 +6352,6 @@ function (_Component) {
       newArrowCheck_default()(this, _this2);
 
       var _this$state = _this.state,
-          tasksFilter = _this$state.tasksFilter,
           done = _this$state.done,
           priority = _this$state.priority;
       if (done && todo.priority === 'high') return todo.priority === priority && todo.done;
@@ -6374,7 +6373,12 @@ function (_Component) {
             return todo;
         }
       }
+    }.bind(this));
 
+    defineProperty_default()(assertThisInitialized_default()(_this), "searchTasks", function (todo) {
+      newArrowCheck_default()(this, _this2);
+
+      var tasksFilter = _this.state.tasksFilter;
       return todo.title.toLowerCase().includes(tasksFilter);
     }.bind(this));
 
@@ -6575,7 +6579,7 @@ function (_Component) {
         newArrowCheck_default()(this, _this8);
 
         return completed(a.done, b.done);
-      }.bind(this)).filter(this.filterTasks).map(function (todo) {
+      }.bind(this)).filter(this.searchTasks).filter(this.filterTasks).map(function (todo) {
         newArrowCheck_default()(this, _this8);
 
         return react_default.a.createElement(Todo_Todo, {
@@ -7324,4 +7328,4 @@ exports.isElement=function(a){return"object"===typeof a&&null!==a&&a.$$typeof===
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=source.e4f27.js.map
+//# sourceMappingURL=source.7bd29.js.map
