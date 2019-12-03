@@ -65,7 +65,7 @@ export default class Todos extends Component {
   }
 
   filterTasks = todo => {
-    const { tasksFilter, done, priority } = this.state;
+    const { done, priority } = this.state;
 
     if (done && todo.priority === 'high') return todo.priority === priority && todo.done;
 
@@ -88,6 +88,11 @@ export default class Todos extends Component {
           return todo;
       }
     }
+
+  };
+
+  searchTasks = todo => {
+    const { tasksFilter } = this.state;
 
     return todo.title.toLowerCase().includes(tasksFilter);
   };
@@ -196,6 +201,7 @@ export default class Todos extends Component {
 
     const todoJSX = todos
       .sort((a, b) => completed(a.done, b.done))
+        .filter(this.searchTasks)
       .filter(this.filterTasks)
       .map(todo => (
         <Todo
