@@ -18,7 +18,7 @@ export default class Modal extends Component {
     this.handleInputChange = this.handleInputChange.bind(this);
     this.createTodo = this.createTodo.bind(this);
     this.cancelTodo = this.cancelTodo.bind(this);
-    this.updateTodo = this.updateTodo.bind(this);
+    // this.updateTodo = this.updateTodo.bind(this);
   }
 
 
