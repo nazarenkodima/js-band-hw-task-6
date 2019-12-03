@@ -45,7 +45,7 @@ export default class Todos extends Component {
         },
       ],
       done: false,
-      priority: '',
+      priority: 'normal',
       currentTodoId: undefined,
       tasksFilter: '',
       showSaveButton: true,
@@ -66,25 +66,30 @@ export default class Todos extends Component {
   filterTasks = todo => {
     const { tasksFilter, done, priority } = this.state;
 
-    if (done) {
-      return todo.done === true;
-    }
+
+    if (done && todo.priority === 'high') return todo.priority === priority && todo.done;
+
+    if (done && todo.priority === 'normal') return todo.priority === priority && todo.done;
+
+    if (done && todo.priority === 'low') return todo.priority === priority && todo.done;
+
 
     if (!done && priority) {
       switch (priority) {
         case 'high':
-          return todo.priority === priority;
+          return todo.priority === priority && !todo.done;
 
         case 'normal':
           return todo;
 
         case 'low':
-          return todo.priority === priority;
+          return todo.priority === priority && !todo.done;
 
         default:
-          return todo.priority === priority;
+          return todo;
       }
     }
+
 
     return todo.title.toLowerCase().includes(tasksFilter);
   };
@@ -171,29 +176,20 @@ export default class Todos extends Component {
 
     const { done } = this.state;
 
-    this.setState({
-      [name]: value,
-      priority: name === 'priority' ? value : '',
-      done: !done,
-    });
-    // console.log('NAME:',event.target.name)
-    // console.log('VALUE:',event.target.value)
+    if(name === 'priority') {
+      this.setState({
+        [name]: value,
+        priority: value,
+      });
+    }
 
-    // if(name === 'priority') {
-    //   this.setState({
-    //     [name]: value,
-    //     priority: value,
-    //     done: false
-    //   });
-    // }
-    //
-    // if (name === 'done') {
-    //   this.setState({
-    //     [name]: value,
-    //     done: !done
-    //   });
-    //
-    // }
+    if (name === 'done') {
+      this.setState({
+        [name]: value,
+        done: !done
+      });
+    }
+
   }
 
   render() {
@@ -230,7 +226,7 @@ export default class Todos extends Component {
             <section className={Styles.toolbar}>
               <div>
                 <input
-                  className="searchTodo"
+                  className="searchTodo form-control"
                   type="text"
                   placeholder="search by title"
                   value={tasksFilter}
@@ -240,7 +236,7 @@ export default class Todos extends Component {
               <div>
                 <select
                   name="done"
-                  className="status"
+                  className="status form-control"
                   defaultValue="open"
                   onChange={this.handleInputChange}
                 >
@@ -251,7 +247,7 @@ export default class Todos extends Component {
               <div>
                 <select
                   name="priority"
-                  className="priority"
+                  className="priority form-control"
                   defaultValue="normal"
                   onChange={this.handleInputChange}
                 >
