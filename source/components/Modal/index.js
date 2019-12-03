@@ -21,23 +21,6 @@ export default class Modal extends Component {
     this.updateTodo = this.updateTodo.bind(this);
   }
 
-  componentDidMount() {
-    const { updateTodo, toggleModal } = this.props;
-
-
-    console.log(this.context);
-
-
-    //  todos.map(todo => {
-    //   if (todo.id === this.id) {
-    //     console.log('1111',todo);
-    //   }
-    // });
-
-    // updateTodo({
-    //   ...id
-    // })
-  }
 
 
   handleInputChange(event) {
@@ -68,19 +51,17 @@ export default class Modal extends Component {
     });
 
     toggleModal();
+
+    return createTodo
   }
 
-  updateTodo() {
-    const { updateTodo, toggleModal } = this.props;
+  // updateTodo() {
+    // const { updateTodo, toggleModal } = this.props;
 
-    console.log(this.context);
-
-    updateTodo({
-      ...id
-    })
+    // console.log(this.context);
 
 
-  }
+  // }
 
   cancelTodo() {
     const { toggleModal } = this.props;
