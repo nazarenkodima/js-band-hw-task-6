@@ -3713,8 +3713,8 @@ function (_Component) {
     };
     _this.handleInputChange = _this.handleInputChange.bind(assertThisInitialized_default()(_this));
     _this.createTodo = _this.createTodo.bind(assertThisInitialized_default()(_this));
-    _this.cancelTodo = _this.cancelTodo.bind(assertThisInitialized_default()(_this));
-    _this.updateTodo = _this.updateTodo.bind(assertThisInitialized_default()(_this));
+    _this.cancelTodo = _this.cancelTodo.bind(assertThisInitialized_default()(_this)); // this.updateTodo = this.updateTodo.bind(this);
+
     return _this;
   }
 
@@ -4847,4 +4847,4 @@ exports.isElement=function(a){return"object"===typeof a&&null!==a&&a.$$typeof===
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=source.70a3d.js.map
+//# sourceMappingURL=source.8f631.js.map
