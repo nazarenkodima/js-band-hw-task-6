@@ -1,5 +1,6 @@
 // Core
 import React, { Component } from 'react';
+import {TodoProvider} from "../ThemeContext/ThemeContext";
 
 // Components
 import Todo from '../Todo';
@@ -13,48 +14,42 @@ export default class Todos extends Component {
     super();
 
     this.state = {
-      tasksFilter: '',
-      saveButton: true,
-      isModalShown: false,
       todos: [
         {
-          id: '3',
-          title: 'Hello world 101',
-          description: 'normal todo',
+          id: '1',
+          title: 'Finish todo task',
+          description: 'Ciklum internship',
           done: true,
-          priority: 'normal',
+          priority: 'high',
         },
         {
           id: '2',
           title: 'Master JS and React',
           description: 'finish Udemy courses',
-          done: true,
+          done: false,
           priority: 'normal',
         },
         {
-          id: '6',
-          title: '1',
-          description: 'finish Udemy courses',
+          id: '3',
+          title: 'Hello world 101',
+          description: 'normal todo',
           done: false,
-          priority: 'low',
-        },
-        {
-          id: '41',
-          title: '2',
-          description: 'finish Udemy courses',
-          done: true,
-          priority: 'low',
+          priority: 'normal',
         },
         {
           id: '4',
-          title: '3',
-          description: 'finish Udemy courses',
-          done: true,
+          title: 'Hello world',
+          description: 'low priority todo',
+          done: false,
           priority: 'low',
         },
       ],
       done: false,
-      priority: ''
+      priority: '',
+      currentTodoId: undefined,
+      tasksFilter: '',
+      showSaveButton: true,
+      isModalShown: false,
     };
 
     this.toggleModal = this.toggleModal.bind(this);
@@ -79,7 +74,7 @@ export default class Todos extends Component {
     if(!done && priority) {
       switch (priority) {
         case 'high':
-          return todo.priority === priority
+          return todo.priority === priority;
 
         case 'normal':
           return todo
@@ -97,7 +92,7 @@ export default class Todos extends Component {
     return todo.title.toLowerCase().includes(tasksFilter);
   };
 
-  toggleModal() {
+  toggleModal(id) {
     const { isModalShown } = this.state;
 
     if (!isModalShown) {
@@ -107,6 +102,8 @@ export default class Todos extends Component {
     }
     this.setState(prevState => ({
       isModalShown: !prevState.isModalShown,
+      currentTodoId: id,
+      showSaveButton: true,
     }));
   }
 
@@ -121,15 +118,13 @@ export default class Todos extends Component {
   createTodo(todo) {
     this.setState(({ todos }) => ({
       todos: [todo, ...todos],
-      saveButton: true
     }));
   }
 
-  updateTodo(todo) {
-    this.setState(({ todos }) => ({
-      todos: [todo, ...todos],
-
-    }));
+  updateTodo(todos) {
+    this.setState({
+          todos,
+        });
   }
 
   deleteTodo(id) {
@@ -160,21 +155,15 @@ export default class Todos extends Component {
     });
   }
 
-  editTodo(id) {
-    const { todos } = this.state;
+  editTodo() {
 
-    const updatedTodos = todos.map(todo => {
-      const t = todo;
-      if (t.id === id) {
-        console.log(t);
-      }
-      return todo;
-    });
+    this.setState(() => (
+        {
+         showSaveButton: false
+        }
+    ));
 
-    this.setState({
-      todos: updatedTodos,
-      saveButton: false
-    });
+
   }
 
   updateTasksFilter(event) {
@@ -197,8 +186,8 @@ export default class Todos extends Component {
       priority: name === 'priority' ? value : '',
       done: !done
     });
-    console.log('NAME:',event.target.name)
-    console.log('VALUE:',event.target.value)
+    // console.log('NAME:',event.target.name)
+    // console.log('VALUE:',event.target.value)
 
 
     // if(name === 'priority') {
@@ -223,7 +212,7 @@ export default class Todos extends Component {
 
 
   render() {
-    const { todos, isModalShown, saveButton, tasksFilter} = this.state;
+    const { todos, isModalShown, showSaveButton, tasksFilter, currentTodoId} = this.state;
 
     const completed = (a, b) => (a > b) - (a < b);
 
@@ -241,11 +230,15 @@ export default class Todos extends Component {
           deleteTodo={this.deleteTodo}
           todoDone={this.todoDone}
           toggleModal={this.toggleModal}
+          editTodo={this.editTodo}
         />
       ));
 
     return (
-
+        <TodoProvider value={{
+        todos,
+        }}
+        >
         <main>
           <div className="container">
             <section className={Styles.toolbar}>
@@ -290,18 +283,19 @@ export default class Todos extends Component {
               this.node = node;
             }}
           >
-            {isModalShown && (
+            {isModalShown &&
               <Modal
                 createTodo={this.createTodo}
-                editTodo={this.editTodo}
                 updateTodo = {this.updateTodo}
                 toggleModal={this.toggleModal}
-                saveButton = {saveButton}
+                showSaveButton = {showSaveButton}
+                currentTodoId = {currentTodoId}
               />
-            )}
+            }
             {isModalShown && <div className={Styles.modalWrapper} />}
           </div>
         </main>
+        </TodoProvider>
     );
   }
 }

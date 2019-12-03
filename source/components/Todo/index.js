@@ -1,14 +1,13 @@
 // Core
 import React, { PureComponent } from 'react';
 import cx from 'classnames';
-import { TodoProvider } from '../ThemeContext/ThemeContext';
 
 // Styles
 import Styles from './Styles.m.css';
 
 export default class Todo extends PureComponent {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.deleteTodo = this.deleteTodo.bind(this);
     this.editTodo = this.editTodo.bind(this);
@@ -27,22 +26,17 @@ export default class Todo extends PureComponent {
     todoDone(id);
   }
 
-  editTodo(event) {
-    console.log(event.target.dataset);
-    const { toggleModal, id, title, description, priority } = this.props;
-    console.log(id, title, description, priority);
+  editTodo() {
+    const { toggleModal, id, editTodo} = this.props;
 
-    toggleModal();
+    toggleModal(id);
+    editTodo();
   }
 
   render() {
-    const { title, description, priority, id, done } = this.props;
+    const { title, description, priority, done } = this.props;
 
     return (
-        <TodoProvider value={{
-          id,
-        }}
-        >
       <li className={cx(Styles.todoItem, { [Styles.completed]: done })}>
         <h4 className="title">{title}</h4>
         <div className={Styles.description}>{description}</div>
@@ -55,10 +49,8 @@ export default class Todo extends PureComponent {
                 done
               </button>
               <button
-                  id='editButton'
                 className="button btn btn-dark"
                 type="button"
-                data-id={id}
                 onClick={this.editTodo}
               >
                 edit
@@ -70,7 +62,7 @@ export default class Todo extends PureComponent {
           </div>
         </div>
       </li>
-      </TodoProvider>
+
 
     );
   }
