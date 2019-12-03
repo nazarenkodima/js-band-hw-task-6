@@ -64,4 +64,13 @@
 
 .completed {
     background-color: rgba(168, 238, 144, 0.2);
+    position: relative;
+    &:after {
+        content: "\2611";
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        color: black;
+        font-size: 1rem;
+    }
 }

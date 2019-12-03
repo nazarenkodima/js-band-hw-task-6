@@ -132,7 +132,7 @@ export default class Modal extends Component {
             />
           </label>
           <select
-            className="create-priority"
+            className="create-priority form-control"
             name="priority"
             value={priority}
             onChange={this.handleInputChange}
